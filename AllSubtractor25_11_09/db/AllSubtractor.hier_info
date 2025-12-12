@@ -1,0 +1,275 @@
+|4BitFullSubtractor
+OUT_RCO <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+SIN1[0] => 4BitFullAdderUltra:inst1.IN1[0]
+SIN1[1] => 4BitFullAdderUltra:inst1.IN1[1]
+SIN1[2] => 4BitFullAdderUltra:inst1.IN1[2]
+SIN1[3] => 4BitFullAdderUltra:inst1.IN1[3]
+SIN2[0] => inst.IN0
+SIN2[1] => inst10.IN0
+SIN2[2] => inst11.IN0
+SIN2[3] => inst12.IN0
+SOUT0 <= 4BitFullAdder:inst2.pin_out_1
+SOUT1 <= 4BitFullAdder:inst2.pin_out_2
+SOUT2 <= 4BitFullAdder:inst2.pin_out_3
+SOUT3 <= 4BitFullAdder:inst2.pin_out_4
+
+
+|4BitFullSubtractor|4BitFullAdderUltra:inst1
+OUT_RCO <= 4BitFullAdder:inst3.pin_out_C
+IN1[0] => 4BitFullAdder:inst3.pin_in_A1
+IN1[1] => 4BitFullAdder:inst3.pin_in_B1
+IN1[2] => 4BitFullAdder:inst3.pin_in_C1
+IN1[3] => 4BitFullAdder:inst3.pin_in_D1
+IN2[0] => 4BitFullAdder:inst3.pin_in_A2
+IN2[1] => 4BitFullAdder:inst3.pin_in_B2
+IN2[2] => 4BitFullAdder:inst3.pin_in_C2
+IN2[3] => 4BitFullAdder:inst3.pin_in_D2
+IN_RCO => 4BitFullAdder:inst3.pin_in_RCO
+OUT[0] <= 4BitFullAdder:inst3.pin_out_1
+OUT[1] <= 4BitFullAdder:inst3.pin_out_2
+OUT[2] <= 4BitFullAdder:inst3.pin_out_3
+OUT[3] <= 4BitFullAdder:inst3.pin_out_4
+
+
+|4BitFullSubtractor|4BitFullAdderUltra:inst1|4BitFullAdder:inst3
+pin_out_1 <= 1BitFullAdder:inst.pin_out_R
+pin_in_A1 => 1BitFullAdder:inst.pin_in1
+pin_in_A2 => 1BitFullAdder:inst.pin_in2
+pin_in_RCO => 1BitFullAdder:inst.pin_in_C
+pin_out_2 <= 1BitFullAdder:inst1.pin_out_R
+pin_in_B1 => 1BitFullAdder:inst1.pin_in1
+pin_in_B2 => 1BitFullAdder:inst1.pin_in2
+pin_out_3 <= 1BitFullAdder:inst3.pin_out_R
+pin_in_C1 => 1BitFullAdder:inst3.pin_in1
+pin_in_C2 => 1BitFullAdder:inst3.pin_in2
+pin_out_4 <= 1BitFullAdder:inst2.pin_out_R
+pin_in_D1 => 1BitFullAdder:inst2.pin_in1
+pin_in_D2 => 1BitFullAdder:inst2.pin_in2
+pin_out_C <= 1BitFullAdder:inst2.pin_out_C
+
+
+|4BitFullSubtractor|4BitFullAdderUltra:inst1|4BitFullAdder:inst3|1BitFullAdder:inst
+pin_out_R <= 1bitHalfAdder:inst1.pin_out_R
+pin_in1 => 1bitHalfAdder:inst.pin_in1
+pin_in2 => 1bitHalfAdder:inst.pin_in2
+pin_in_C => 1bitHalfAdder:inst1.pin_in2
+pin_out_C <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4BitFullSubtractor|4BitFullAdderUltra:inst1|4BitFullAdder:inst3|1BitFullAdder:inst|1bitHalfAdder:inst1
+pin_out_R <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_in1 => inst.IN0
+pin_in1 => inst1.IN0
+pin_in2 => inst.IN1
+pin_in2 => inst1.IN1
+pin_out_C <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4BitFullSubtractor|4BitFullAdderUltra:inst1|4BitFullAdder:inst3|1BitFullAdder:inst|1bitHalfAdder:inst
+pin_out_R <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_in1 => inst.IN0
+pin_in1 => inst1.IN0
+pin_in2 => inst.IN1
+pin_in2 => inst1.IN1
+pin_out_C <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4BitFullSubtractor|4BitFullAdderUltra:inst1|4BitFullAdder:inst3|1BitFullAdder:inst1
+pin_out_R <= 1bitHalfAdder:inst1.pin_out_R
+pin_in1 => 1bitHalfAdder:inst.pin_in1
+pin_in2 => 1bitHalfAdder:inst.pin_in2
+pin_in_C => 1bitHalfAdder:inst1.pin_in2
+pin_out_C <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4BitFullSubtractor|4BitFullAdderUltra:inst1|4BitFullAdder:inst3|1BitFullAdder:inst1|1bitHalfAdder:inst1
+pin_out_R <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_in1 => inst.IN0
+pin_in1 => inst1.IN0
+pin_in2 => inst.IN1
+pin_in2 => inst1.IN1
+pin_out_C <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4BitFullSubtractor|4BitFullAdderUltra:inst1|4BitFullAdder:inst3|1BitFullAdder:inst1|1bitHalfAdder:inst
+pin_out_R <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_in1 => inst.IN0
+pin_in1 => inst1.IN0
+pin_in2 => inst.IN1
+pin_in2 => inst1.IN1
+pin_out_C <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4BitFullSubtractor|4BitFullAdderUltra:inst1|4BitFullAdder:inst3|1BitFullAdder:inst3
+pin_out_R <= 1bitHalfAdder:inst1.pin_out_R
+pin_in1 => 1bitHalfAdder:inst.pin_in1
+pin_in2 => 1bitHalfAdder:inst.pin_in2
+pin_in_C => 1bitHalfAdder:inst1.pin_in2
+pin_out_C <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4BitFullSubtractor|4BitFullAdderUltra:inst1|4BitFullAdder:inst3|1BitFullAdder:inst3|1bitHalfAdder:inst1
+pin_out_R <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_in1 => inst.IN0
+pin_in1 => inst1.IN0
+pin_in2 => inst.IN1
+pin_in2 => inst1.IN1
+pin_out_C <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4BitFullSubtractor|4BitFullAdderUltra:inst1|4BitFullAdder:inst3|1BitFullAdder:inst3|1bitHalfAdder:inst
+pin_out_R <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_in1 => inst.IN0
+pin_in1 => inst1.IN0
+pin_in2 => inst.IN1
+pin_in2 => inst1.IN1
+pin_out_C <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4BitFullSubtractor|4BitFullAdderUltra:inst1|4BitFullAdder:inst3|1BitFullAdder:inst2
+pin_out_R <= 1bitHalfAdder:inst1.pin_out_R
+pin_in1 => 1bitHalfAdder:inst.pin_in1
+pin_in2 => 1bitHalfAdder:inst.pin_in2
+pin_in_C => 1bitHalfAdder:inst1.pin_in2
+pin_out_C <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4BitFullSubtractor|4BitFullAdderUltra:inst1|4BitFullAdder:inst3|1BitFullAdder:inst2|1bitHalfAdder:inst1
+pin_out_R <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_in1 => inst.IN0
+pin_in1 => inst1.IN0
+pin_in2 => inst.IN1
+pin_in2 => inst1.IN1
+pin_out_C <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4BitFullSubtractor|4BitFullAdderUltra:inst1|4BitFullAdder:inst3|1BitFullAdder:inst2|1bitHalfAdder:inst
+pin_out_R <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_in1 => inst.IN0
+pin_in1 => inst1.IN0
+pin_in2 => inst.IN1
+pin_in2 => inst1.IN1
+pin_out_C <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4BitFullSubtractor|4BitFullAdder:inst2
+pin_out_1 <= 1BitFullAdder:inst.pin_out_R
+pin_in_A1 => 1BitFullAdder:inst.pin_in1
+pin_in_A2 => 1BitFullAdder:inst.pin_in2
+pin_in_RCO => 1BitFullAdder:inst.pin_in_C
+pin_out_2 <= 1BitFullAdder:inst1.pin_out_R
+pin_in_B1 => 1BitFullAdder:inst1.pin_in1
+pin_in_B2 => 1BitFullAdder:inst1.pin_in2
+pin_out_3 <= 1BitFullAdder:inst3.pin_out_R
+pin_in_C1 => 1BitFullAdder:inst3.pin_in1
+pin_in_C2 => 1BitFullAdder:inst3.pin_in2
+pin_out_4 <= 1BitFullAdder:inst2.pin_out_R
+pin_in_D1 => 1BitFullAdder:inst2.pin_in1
+pin_in_D2 => 1BitFullAdder:inst2.pin_in2
+pin_out_C <= 1BitFullAdder:inst2.pin_out_C
+
+
+|4BitFullSubtractor|4BitFullAdder:inst2|1BitFullAdder:inst
+pin_out_R <= 1bitHalfAdder:inst1.pin_out_R
+pin_in1 => 1bitHalfAdder:inst.pin_in1
+pin_in2 => 1bitHalfAdder:inst.pin_in2
+pin_in_C => 1bitHalfAdder:inst1.pin_in2
+pin_out_C <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4BitFullSubtractor|4BitFullAdder:inst2|1BitFullAdder:inst|1bitHalfAdder:inst1
+pin_out_R <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_in1 => inst.IN0
+pin_in1 => inst1.IN0
+pin_in2 => inst.IN1
+pin_in2 => inst1.IN1
+pin_out_C <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4BitFullSubtractor|4BitFullAdder:inst2|1BitFullAdder:inst|1bitHalfAdder:inst
+pin_out_R <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_in1 => inst.IN0
+pin_in1 => inst1.IN0
+pin_in2 => inst.IN1
+pin_in2 => inst1.IN1
+pin_out_C <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4BitFullSubtractor|4BitFullAdder:inst2|1BitFullAdder:inst1
+pin_out_R <= 1bitHalfAdder:inst1.pin_out_R
+pin_in1 => 1bitHalfAdder:inst.pin_in1
+pin_in2 => 1bitHalfAdder:inst.pin_in2
+pin_in_C => 1bitHalfAdder:inst1.pin_in2
+pin_out_C <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4BitFullSubtractor|4BitFullAdder:inst2|1BitFullAdder:inst1|1bitHalfAdder:inst1
+pin_out_R <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_in1 => inst.IN0
+pin_in1 => inst1.IN0
+pin_in2 => inst.IN1
+pin_in2 => inst1.IN1
+pin_out_C <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4BitFullSubtractor|4BitFullAdder:inst2|1BitFullAdder:inst1|1bitHalfAdder:inst
+pin_out_R <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_in1 => inst.IN0
+pin_in1 => inst1.IN0
+pin_in2 => inst.IN1
+pin_in2 => inst1.IN1
+pin_out_C <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4BitFullSubtractor|4BitFullAdder:inst2|1BitFullAdder:inst3
+pin_out_R <= 1bitHalfAdder:inst1.pin_out_R
+pin_in1 => 1bitHalfAdder:inst.pin_in1
+pin_in2 => 1bitHalfAdder:inst.pin_in2
+pin_in_C => 1bitHalfAdder:inst1.pin_in2
+pin_out_C <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4BitFullSubtractor|4BitFullAdder:inst2|1BitFullAdder:inst3|1bitHalfAdder:inst1
+pin_out_R <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_in1 => inst.IN0
+pin_in1 => inst1.IN0
+pin_in2 => inst.IN1
+pin_in2 => inst1.IN1
+pin_out_C <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4BitFullSubtractor|4BitFullAdder:inst2|1BitFullAdder:inst3|1bitHalfAdder:inst
+pin_out_R <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_in1 => inst.IN0
+pin_in1 => inst1.IN0
+pin_in2 => inst.IN1
+pin_in2 => inst1.IN1
+pin_out_C <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4BitFullSubtractor|4BitFullAdder:inst2|1BitFullAdder:inst2
+pin_out_R <= 1bitHalfAdder:inst1.pin_out_R
+pin_in1 => 1bitHalfAdder:inst.pin_in1
+pin_in2 => 1bitHalfAdder:inst.pin_in2
+pin_in_C => 1bitHalfAdder:inst1.pin_in2
+pin_out_C <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4BitFullSubtractor|4BitFullAdder:inst2|1BitFullAdder:inst2|1bitHalfAdder:inst1
+pin_out_R <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_in1 => inst.IN0
+pin_in1 => inst1.IN0
+pin_in2 => inst.IN1
+pin_in2 => inst1.IN1
+pin_out_C <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4BitFullSubtractor|4BitFullAdder:inst2|1BitFullAdder:inst2|1bitHalfAdder:inst
+pin_out_R <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_in1 => inst.IN0
+pin_in1 => inst1.IN0
+pin_in2 => inst.IN1
+pin_in2 => inst1.IN1
+pin_out_C <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+

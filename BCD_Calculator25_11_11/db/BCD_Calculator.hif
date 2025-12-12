@@ -1,0 +1,139 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+12
+1094
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+4BitFullAdder
+# storage
+db|BCD_Calculator.(1).cnf
+db|BCD_Calculator.(1).cnf
+# case_insensitive
+# source_file
+|quartus_fpga|allsubtractor25_11_09|4bitfulladder.bdf
+8dbb1d78aee3b1b275c2471bb7ef312b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+4BitFullAdder:inst17
+4BitFullAdder:inst1
+4BitFullAdder:inst
+}
+# macro_sequence
+
+# end
+# entity
+1BitFullAdder
+# storage
+db|BCD_Calculator.(2).cnf
+db|BCD_Calculator.(2).cnf
+# case_insensitive
+# source_file
+|quartus_fpga|allsubtractor25_11_09|1bitfulladder.bdf
+72a76c22f8b6eb8dca698dc9a3131a53
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+4BitFullAdder:inst17|1BitFullAdder:inst
+4BitFullAdder:inst17|1BitFullAdder:inst1
+4BitFullAdder:inst17|1BitFullAdder:inst3
+4BitFullAdder:inst17|1BitFullAdder:inst2
+4BitFullAdder:inst1|1BitFullAdder:inst
+4BitFullAdder:inst1|1BitFullAdder:inst1
+4BitFullAdder:inst1|1BitFullAdder:inst3
+4BitFullAdder:inst1|1BitFullAdder:inst2
+4BitFullAdder:inst|1BitFullAdder:inst
+4BitFullAdder:inst|1BitFullAdder:inst1
+4BitFullAdder:inst|1BitFullAdder:inst3
+4BitFullAdder:inst|1BitFullAdder:inst2
+}
+# macro_sequence
+
+# end
+# entity
+1BitHalfAdder
+# storage
+db|BCD_Calculator.(3).cnf
+db|BCD_Calculator.(3).cnf
+# case_insensitive
+# source_file
+|quartus_fpga|allsubtractor25_11_09|1bithalfadder.bdf
+d7b667ed146d67235bd16c54479659c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+4BitFullAdder:inst17|1BitFullAdder:inst|1BitHalfAdder:inst1
+4BitFullAdder:inst17|1BitFullAdder:inst|1BitHalfAdder:inst
+4BitFullAdder:inst17|1BitFullAdder:inst1|1BitHalfAdder:inst1
+4BitFullAdder:inst17|1BitFullAdder:inst1|1BitHalfAdder:inst
+4BitFullAdder:inst17|1BitFullAdder:inst3|1BitHalfAdder:inst1
+4BitFullAdder:inst17|1BitFullAdder:inst3|1BitHalfAdder:inst
+4BitFullAdder:inst17|1BitFullAdder:inst2|1BitHalfAdder:inst1
+4BitFullAdder:inst17|1BitFullAdder:inst2|1BitHalfAdder:inst
+4BitFullAdder:inst1|1BitFullAdder:inst|1BitHalfAdder:inst1
+4BitFullAdder:inst1|1BitFullAdder:inst|1BitHalfAdder:inst
+4BitFullAdder:inst1|1BitFullAdder:inst1|1BitHalfAdder:inst1
+4BitFullAdder:inst1|1BitFullAdder:inst1|1BitHalfAdder:inst
+4BitFullAdder:inst1|1BitFullAdder:inst3|1BitHalfAdder:inst1
+4BitFullAdder:inst1|1BitFullAdder:inst3|1BitHalfAdder:inst
+4BitFullAdder:inst1|1BitFullAdder:inst2|1BitHalfAdder:inst1
+4BitFullAdder:inst1|1BitFullAdder:inst2|1BitHalfAdder:inst
+4BitFullAdder:inst|1BitFullAdder:inst|1BitHalfAdder:inst1
+4BitFullAdder:inst|1BitFullAdder:inst|1BitHalfAdder:inst
+4BitFullAdder:inst|1BitFullAdder:inst1|1BitHalfAdder:inst1
+4BitFullAdder:inst|1BitFullAdder:inst1|1BitHalfAdder:inst
+4BitFullAdder:inst|1BitFullAdder:inst3|1BitHalfAdder:inst1
+4BitFullAdder:inst|1BitFullAdder:inst3|1BitHalfAdder:inst
+4BitFullAdder:inst|1BitFullAdder:inst2|1BitHalfAdder:inst1
+4BitFullAdder:inst|1BitFullAdder:inst2|1BitHalfAdder:inst
+}
+# macro_sequence
+
+# end
+# entity
+BCD_Calculator
+# storage
+db|BCD_Calculator.(0).cnf
+db|BCD_Calculator.(0).cnf
+# case_insensitive
+# source_file
+bcd_calculator.bdf
+e0e155db5fac655bf9d8d84972d9f9a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

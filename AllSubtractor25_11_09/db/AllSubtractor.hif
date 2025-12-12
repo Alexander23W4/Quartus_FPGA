@@ -1,0 +1,146 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+10
+700
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+4BitFullAdderUltra
+# storage
+db|AllSubtractor.(1).cnf
+db|AllSubtractor.(1).cnf
+# case_insensitive
+# source_file
+4bitfulladderultra.bdf
+e7318dfb9ddd8bd5bee41a29be95f485
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+4BitFullAdderUltra:inst1
+}
+# macro_sequence
+
+# end
+# entity
+4BitFullAdder
+# storage
+db|AllSubtractor.(2).cnf
+db|AllSubtractor.(2).cnf
+# case_insensitive
+# source_file
+4bitfulladder.bdf
+8dbb1d78aee3b1b275c2471bb7ef312b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+4BitFullAdderUltra:inst1|4bitfulladder:inst3
+4bitfulladder:inst2
+}
+# macro_sequence
+
+# end
+# entity
+1BitFullAdder
+# storage
+db|AllSubtractor.(3).cnf
+db|AllSubtractor.(3).cnf
+# case_insensitive
+# source_file
+1bitfulladder.bdf
+72a76c22f8b6eb8dca698dc9a3131a53
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+4BitFullAdderUltra:inst1|4bitfulladder:inst3|1bitfulladder:inst
+4BitFullAdderUltra:inst1|4bitfulladder:inst3|1bitfulladder:inst1
+4BitFullAdderUltra:inst1|4bitfulladder:inst3|1bitfulladder:inst3
+4BitFullAdderUltra:inst1|4bitfulladder:inst3|1bitfulladder:inst2
+4bitfulladder:inst2|1bitfulladder:inst
+4bitfulladder:inst2|1bitfulladder:inst1
+4bitfulladder:inst2|1bitfulladder:inst3
+4bitfulladder:inst2|1bitfulladder:inst2
+}
+# macro_sequence
+
+# end
+# entity
+1bitHalfAdder
+# storage
+db|AllSubtractor.(4).cnf
+db|AllSubtractor.(4).cnf
+# case_insensitive
+# source_file
+1bithalfadder.bdf
+d7b667ed146d67235bd16c54479659c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+4BitFullAdderUltra:inst1|4bitfulladder:inst3|1bitfulladder:inst|1bithalfadder:inst1
+4BitFullAdderUltra:inst1|4bitfulladder:inst3|1bitfulladder:inst|1bithalfadder:inst
+4BitFullAdderUltra:inst1|4bitfulladder:inst3|1bitfulladder:inst1|1bithalfadder:inst1
+4BitFullAdderUltra:inst1|4bitfulladder:inst3|1bitfulladder:inst1|1bithalfadder:inst
+4BitFullAdderUltra:inst1|4bitfulladder:inst3|1bitfulladder:inst3|1bithalfadder:inst1
+4BitFullAdderUltra:inst1|4bitfulladder:inst3|1bitfulladder:inst3|1bithalfadder:inst
+4BitFullAdderUltra:inst1|4bitfulladder:inst3|1bitfulladder:inst2|1bithalfadder:inst1
+4BitFullAdderUltra:inst1|4bitfulladder:inst3|1bitfulladder:inst2|1bithalfadder:inst
+4bitfulladder:inst2|1bitfulladder:inst|1bithalfadder:inst1
+4bitfulladder:inst2|1bitfulladder:inst|1bithalfadder:inst
+4bitfulladder:inst2|1bitfulladder:inst1|1bithalfadder:inst1
+4bitfulladder:inst2|1bitfulladder:inst1|1bithalfadder:inst
+4bitfulladder:inst2|1bitfulladder:inst3|1bithalfadder:inst1
+4bitfulladder:inst2|1bitfulladder:inst3|1bithalfadder:inst
+4bitfulladder:inst2|1bitfulladder:inst2|1bithalfadder:inst1
+4bitfulladder:inst2|1bitfulladder:inst2|1bithalfadder:inst
+}
+# macro_sequence
+
+# end
+# entity
+4BitFullSubtractor
+# storage
+db|AllSubtractor.(0).cnf
+db|AllSubtractor.(0).cnf
+# case_insensitive
+# source_file
+4bitfullsubtractor.bdf
+35852185fa40ddad23c8d5f9aaa51849
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

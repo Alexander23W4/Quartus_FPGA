@@ -1,0 +1,8 @@
+|Modulo8_Asyn_Counter
+OUT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+bit0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+bit1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+bit2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
