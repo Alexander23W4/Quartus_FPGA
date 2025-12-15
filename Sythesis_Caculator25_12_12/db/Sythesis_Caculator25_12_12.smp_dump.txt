@@ -1,0 +1,7 @@
+
+State Machine - |Full_Calculator|Core_Calculator:inst3|key:inst|keyboard:inst1|pre_state
+Name pre_state.wait_key_release pre_state.lock_key_value pre_state.stop_key_scan pre_state.wait_key_press 
+pre_state.wait_key_press 0 0 0 0 
+pre_state.stop_key_scan 0 0 1 1 
+pre_state.lock_key_value 0 1 0 1 
+pre_state.wait_key_release 1 0 0 1 

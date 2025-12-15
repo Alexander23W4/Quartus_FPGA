@@ -1,0 +1,866 @@
+-- Copyright (C) 1991-2010 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+
+-- PROGRAM		"Quartus II"
+-- VERSION		"Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition"
+-- CREATED		"Mon Dec 15 21:27:03 2025"
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all; 
+
+LIBRARY work;
+
+ENTITY \4bitmulti\ IS 
+	PORT
+	(
+		CLK :  IN  STD_LOGIC;
+		Start :  IN  STD_LOGIC;
+		A1 :  IN  STD_LOGIC;
+		A2 :  IN  STD_LOGIC;
+		A3 :  IN  STD_LOGIC;
+		A4 :  IN  STD_LOGIC;
+		B1 :  IN  STD_LOGIC;
+		B2 :  IN  STD_LOGIC;
+		B3 :  IN  STD_LOGIC;
+		B4 :  IN  STD_LOGIC;
+		M1 :  OUT  STD_LOGIC;
+		M2 :  OUT  STD_LOGIC;
+		M3 :  OUT  STD_LOGIC;
+		M4 :  OUT  STD_LOGIC;
+		M5 :  OUT  STD_LOGIC;
+		M6 :  OUT  STD_LOGIC;
+		M7 :  OUT  STD_LOGIC;
+		M8 :  OUT  STD_LOGIC
+	);
+END \4bitmulti\;
+
+ARCHITECTURE bdf_type OF \4bitmulti\ IS 
+
+ATTRIBUTE black_box : BOOLEAN;
+ATTRIBUTE noopt : BOOLEAN;
+
+COMPONENT \74151_1\
+	PORT(GN : IN STD_LOGIC;
+		 C : IN STD_LOGIC;
+		 B : IN STD_LOGIC;
+		 A : IN STD_LOGIC;
+		 D5 : IN STD_LOGIC;
+		 D0 : IN STD_LOGIC;
+		 D1 : IN STD_LOGIC;
+		 D4 : IN STD_LOGIC;
+		 D3 : IN STD_LOGIC;
+		 D2 : IN STD_LOGIC;
+		 D6 : IN STD_LOGIC;
+		 D7 : IN STD_LOGIC;
+		 Y : OUT STD_LOGIC);
+END COMPONENT;
+ATTRIBUTE black_box OF \74151_1\: COMPONENT IS true;
+ATTRIBUTE noopt OF \74151_1\: COMPONENT IS true;
+
+COMPONENT \74151_10\
+	PORT(GN : IN STD_LOGIC;
+		 C : IN STD_LOGIC;
+		 B : IN STD_LOGIC;
+		 A : IN STD_LOGIC;
+		 D0 : IN STD_LOGIC;
+		 D1 : IN STD_LOGIC;
+		 D3 : IN STD_LOGIC;
+		 D2 : IN STD_LOGIC;
+		 Y : OUT STD_LOGIC);
+END COMPONENT;
+ATTRIBUTE black_box OF \74151_10\: COMPONENT IS true;
+ATTRIBUTE noopt OF \74151_10\: COMPONENT IS true;
+
+COMPONENT \74151_3\
+	PORT(GN : IN STD_LOGIC;
+		 C : IN STD_LOGIC;
+		 B : IN STD_LOGIC;
+		 A : IN STD_LOGIC;
+		 D5 : IN STD_LOGIC;
+		 D0 : IN STD_LOGIC;
+		 D1 : IN STD_LOGIC;
+		 D4 : IN STD_LOGIC;
+		 D3 : IN STD_LOGIC;
+		 D2 : IN STD_LOGIC;
+		 D6 : IN STD_LOGIC;
+		 D7 : IN STD_LOGIC;
+		 Y : OUT STD_LOGIC);
+END COMPONENT;
+ATTRIBUTE black_box OF \74151_3\: COMPONENT IS true;
+ATTRIBUTE noopt OF \74151_3\: COMPONENT IS true;
+
+COMPONENT \74151_8\
+	PORT(GN : IN STD_LOGIC;
+		 C : IN STD_LOGIC;
+		 B : IN STD_LOGIC;
+		 A : IN STD_LOGIC;
+		 D5 : IN STD_LOGIC;
+		 D0 : IN STD_LOGIC;
+		 D1 : IN STD_LOGIC;
+		 D4 : IN STD_LOGIC;
+		 D3 : IN STD_LOGIC;
+		 D2 : IN STD_LOGIC;
+		 D6 : IN STD_LOGIC;
+		 D7 : IN STD_LOGIC;
+		 Y : OUT STD_LOGIC);
+END COMPONENT;
+ATTRIBUTE black_box OF \74151_8\: COMPONENT IS true;
+ATTRIBUTE noopt OF \74151_8\: COMPONENT IS true;
+
+COMPONENT \74151_9\
+	PORT(GN : IN STD_LOGIC;
+		 C : IN STD_LOGIC;
+		 B : IN STD_LOGIC;
+		 A : IN STD_LOGIC;
+		 D5 : IN STD_LOGIC;
+		 D0 : IN STD_LOGIC;
+		 D1 : IN STD_LOGIC;
+		 D4 : IN STD_LOGIC;
+		 D3 : IN STD_LOGIC;
+		 D2 : IN STD_LOGIC;
+		 D6 : IN STD_LOGIC;
+		 D7 : IN STD_LOGIC;
+		 Y : OUT STD_LOGIC);
+END COMPONENT;
+ATTRIBUTE black_box OF \74151_9\: COMPONENT IS true;
+ATTRIBUTE noopt OF \74151_9\: COMPONENT IS true;
+
+COMPONENT \74161_2\
+	PORT(CLRN : IN STD_LOGIC;
+		 CLK : IN STD_LOGIC;
+		 ENP : IN STD_LOGIC;
+		 LDN : IN STD_LOGIC;
+		 A : IN STD_LOGIC;
+		 D : IN STD_LOGIC;
+		 ENT : IN STD_LOGIC;
+		 B : IN STD_LOGIC;
+		 C : IN STD_LOGIC;
+		 QD : OUT STD_LOGIC;
+		 QC : OUT STD_LOGIC;
+		 QB : OUT STD_LOGIC;
+		 QA : OUT STD_LOGIC);
+END COMPONENT;
+ATTRIBUTE black_box OF \74161_2\: COMPONENT IS true;
+ATTRIBUTE noopt OF \74161_2\: COMPONENT IS true;
+
+COMPONENT \74283_0\
+	PORT(CIN : IN STD_LOGIC;
+		 A1 : IN STD_LOGIC;
+		 A2 : IN STD_LOGIC;
+		 B2 : IN STD_LOGIC;
+		 A3 : IN STD_LOGIC;
+		 A4 : IN STD_LOGIC;
+		 B4 : IN STD_LOGIC;
+		 B1 : IN STD_LOGIC;
+		 B3 : IN STD_LOGIC;
+		 SUM4 : OUT STD_LOGIC;
+		 COUT : OUT STD_LOGIC;
+		 SUM1 : OUT STD_LOGIC;
+		 SUM2 : OUT STD_LOGIC;
+		 SUM3 : OUT STD_LOGIC);
+END COMPONENT;
+ATTRIBUTE black_box OF \74283_0\: COMPONENT IS true;
+ATTRIBUTE noopt OF \74283_0\: COMPONENT IS true;
+
+COMPONENT \74283_4\
+	PORT(A1 : IN STD_LOGIC;
+		 A2 : IN STD_LOGIC;
+		 B2 : IN STD_LOGIC;
+		 A3 : IN STD_LOGIC;
+		 A4 : IN STD_LOGIC;
+		 B4 : IN STD_LOGIC;
+		 B1 : IN STD_LOGIC;
+		 B3 : IN STD_LOGIC;
+		 SUM1 : OUT STD_LOGIC;
+		 SUM2 : OUT STD_LOGIC;
+		 SUM3 : OUT STD_LOGIC);
+END COMPONENT;
+ATTRIBUTE black_box OF \74283_4\: COMPONENT IS true;
+ATTRIBUTE noopt OF \74283_4\: COMPONENT IS true;
+
+COMPONENT \74283_5\
+	PORT(A1 : IN STD_LOGIC;
+		 A2 : IN STD_LOGIC;
+		 B2 : IN STD_LOGIC;
+		 A3 : IN STD_LOGIC;
+		 A4 : IN STD_LOGIC;
+		 B4 : IN STD_LOGIC;
+		 B1 : IN STD_LOGIC;
+		 B3 : IN STD_LOGIC;
+		 SUM1 : OUT STD_LOGIC;
+		 SUM2 : OUT STD_LOGIC;
+		 SUM3 : OUT STD_LOGIC);
+END COMPONENT;
+ATTRIBUTE black_box OF \74283_5\: COMPONENT IS true;
+ATTRIBUTE noopt OF \74283_5\: COMPONENT IS true;
+
+COMPONENT \74283_6\
+	PORT(A1 : IN STD_LOGIC;
+		 A2 : IN STD_LOGIC;
+		 B2 : IN STD_LOGIC;
+		 A3 : IN STD_LOGIC;
+		 A4 : IN STD_LOGIC;
+		 B4 : IN STD_LOGIC;
+		 B1 : IN STD_LOGIC;
+		 B3 : IN STD_LOGIC;
+		 SUM1 : OUT STD_LOGIC;
+		 SUM2 : OUT STD_LOGIC;
+		 SUM3 : OUT STD_LOGIC);
+END COMPONENT;
+ATTRIBUTE black_box OF \74283_6\: COMPONENT IS true;
+ATTRIBUTE noopt OF \74283_6\: COMPONENT IS true;
+
+COMPONENT \74283_7\
+	PORT(A1 : IN STD_LOGIC;
+		 A2 : IN STD_LOGIC;
+		 B2 : IN STD_LOGIC;
+		 A3 : IN STD_LOGIC;
+		 A4 : IN STD_LOGIC;
+		 B4 : IN STD_LOGIC;
+		 B1 : IN STD_LOGIC;
+		 B3 : IN STD_LOGIC;
+		 SUM1 : OUT STD_LOGIC;
+		 SUM2 : OUT STD_LOGIC;
+		 SUM3 : OUT STD_LOGIC);
+END COMPONENT;
+ATTRIBUTE black_box OF \74283_7\: COMPONENT IS true;
+ATTRIBUTE noopt OF \74283_7\: COMPONENT IS true;
+
+COMPONENT \8bitregister\
+	PORT(D0 : IN STD_LOGIC;
+		 D1 : IN STD_LOGIC;
+		 D2 : IN STD_LOGIC;
+		 D3 : IN STD_LOGIC;
+		 D4 : IN STD_LOGIC;
+		 D5 : IN STD_LOGIC;
+		 D6 : IN STD_LOGIC;
+		 D7 : IN STD_LOGIC;
+		 PRN : IN STD_LOGIC;
+		 CLK : IN STD_LOGIC;
+		 Clear : IN STD_LOGIC;
+		 Q0 : OUT STD_LOGIC;
+		 Q1 : OUT STD_LOGIC;
+		 Q2 : OUT STD_LOGIC;
+		 Q3 : OUT STD_LOGIC;
+		 Q4 : OUT STD_LOGIC;
+		 Q5 : OUT STD_LOGIC;
+		 Q6 : OUT STD_LOGIC;
+		 Q7 : OUT STD_LOGIC
+	);
+END COMPONENT;
+
+COMPONENT my_or5
+	PORT(in1 : IN STD_LOGIC;
+		 in2 : IN STD_LOGIC;
+		 in3 : IN STD_LOGIC;
+		 in4 : IN STD_LOGIC;
+		 in5 : IN STD_LOGIC;
+		 result : OUT STD_LOGIC
+	);
+END COMPONENT;
+
+COMPONENT \74138formulti\
+	PORT(Data : IN STD_LOGIC;
+		 A : IN STD_LOGIC;
+		 B : IN STD_LOGIC;
+		 C : IN STD_LOGIC;
+		 G1 : IN STD_LOGIC;
+		 G2/ : IN STD_LOGIC;
+		 G3/ : IN STD_LOGIC;
+		 Y0 : OUT STD_LOGIC;
+		 Y1 : OUT STD_LOGIC;
+		 Y2 : OUT STD_LOGIC;
+		 Y3 : OUT STD_LOGIC;
+		 Y4 : OUT STD_LOGIC;
+		 Y5 : OUT STD_LOGIC;
+		 Y6 : OUT STD_LOGIC;
+		 Y7 : OUT STD_LOGIC
+	);
+END COMPONENT;
+
+SIGNAL	AA1 :  STD_LOGIC;
+SIGNAL	AA2 :  STD_LOGIC;
+SIGNAL	AA3 :  STD_LOGIC;
+SIGNAL	AA4 :  STD_LOGIC;
+SIGNAL	AY1 :  STD_LOGIC;
+SIGNAL	AY2 :  STD_LOGIC;
+SIGNAL	AY3 :  STD_LOGIC;
+SIGNAL	AY4 :  STD_LOGIC;
+SIGNAL	D0 :  STD_LOGIC;
+SIGNAL	D01 :  STD_LOGIC;
+SIGNAL	D02 :  STD_LOGIC;
+SIGNAL	D03 :  STD_LOGIC;
+SIGNAL	D04 :  STD_LOGIC;
+SIGNAL	D05 :  STD_LOGIC;
+SIGNAL	D1 :  STD_LOGIC;
+SIGNAL	D11 :  STD_LOGIC;
+SIGNAL	D12 :  STD_LOGIC;
+SIGNAL	D13 :  STD_LOGIC;
+SIGNAL	D14 :  STD_LOGIC;
+SIGNAL	D15 :  STD_LOGIC;
+SIGNAL	D2 :  STD_LOGIC;
+SIGNAL	D21 :  STD_LOGIC;
+SIGNAL	D22 :  STD_LOGIC;
+SIGNAL	D23 :  STD_LOGIC;
+SIGNAL	D24 :  STD_LOGIC;
+SIGNAL	D25 :  STD_LOGIC;
+SIGNAL	D3 :  STD_LOGIC;
+SIGNAL	D31 :  STD_LOGIC;
+SIGNAL	D32 :  STD_LOGIC;
+SIGNAL	D33 :  STD_LOGIC;
+SIGNAL	D34 :  STD_LOGIC;
+SIGNAL	D35 :  STD_LOGIC;
+SIGNAL	D4 :  STD_LOGIC;
+SIGNAL	D41 :  STD_LOGIC;
+SIGNAL	D42 :  STD_LOGIC;
+SIGNAL	D43 :  STD_LOGIC;
+SIGNAL	D44 :  STD_LOGIC;
+SIGNAL	D45 :  STD_LOGIC;
+SIGNAL	D5 :  STD_LOGIC;
+SIGNAL	D51 :  STD_LOGIC;
+SIGNAL	D52 :  STD_LOGIC;
+SIGNAL	D53 :  STD_LOGIC;
+SIGNAL	D54 :  STD_LOGIC;
+SIGNAL	D55 :  STD_LOGIC;
+SIGNAL	D6 :  STD_LOGIC;
+SIGNAL	D61 :  STD_LOGIC;
+SIGNAL	D62 :  STD_LOGIC;
+SIGNAL	D63 :  STD_LOGIC;
+SIGNAL	D64 :  STD_LOGIC;
+SIGNAL	D65 :  STD_LOGIC;
+SIGNAL	D7 :  STD_LOGIC;
+SIGNAL	D71 :  STD_LOGIC;
+SIGNAL	D72 :  STD_LOGIC;
+SIGNAL	D73 :  STD_LOGIC;
+SIGNAL	D74 :  STD_LOGIC;
+SIGNAL	D75 :  STD_LOGIC;
+SIGNAL	ENP :  STD_LOGIC;
+SIGNAL	Q0 :  STD_LOGIC;
+SIGNAL	Q1 :  STD_LOGIC;
+SIGNAL	Q2 :  STD_LOGIC;
+SIGNAL	Q3 :  STD_LOGIC;
+SIGNAL	Q4 :  STD_LOGIC;
+SIGNAL	Q5 :  STD_LOGIC;
+SIGNAL	Q6 :  STD_LOGIC;
+SIGNAL	Q7 :  STD_LOGIC;
+SIGNAL	QA1 :  STD_LOGIC;
+SIGNAL	QA2 :  STD_LOGIC;
+SIGNAL	QA3 :  STD_LOGIC;
+SIGNAL	QA4 :  STD_LOGIC;
+SIGNAL	QA5 :  STD_LOGIC;
+SIGNAL	QB1 :  STD_LOGIC;
+SIGNAL	QB2 :  STD_LOGIC;
+SIGNAL	QB3 :  STD_LOGIC;
+SIGNAL	QB4 :  STD_LOGIC;
+SIGNAL	QB5 :  STD_LOGIC;
+SIGNAL	QC1 :  STD_LOGIC;
+SIGNAL	QC2 :  STD_LOGIC;
+SIGNAL	QC3 :  STD_LOGIC;
+SIGNAL	QC4 :  STD_LOGIC;
+SIGNAL	QC5 :  STD_LOGIC;
+SIGNAL	QD1 :  STD_LOGIC;
+SIGNAL	QD2 :  STD_LOGIC;
+SIGNAL	QD3 :  STD_LOGIC;
+SIGNAL	QD4 :  STD_LOGIC;
+SIGNAL	QD5 :  STD_LOGIC;
+SIGNAL	SC :  STD_LOGIC;
+SIGNAL	SUM1 :  STD_LOGIC;
+SIGNAL	SUM2 :  STD_LOGIC;
+SIGNAL	SUM3 :  STD_LOGIC;
+SIGNAL	SUM4 :  STD_LOGIC;
+SIGNAL	Y1 :  STD_LOGIC;
+SIGNAL	Y2 :  STD_LOGIC;
+SIGNAL	Y3 :  STD_LOGIC;
+SIGNAL	Y4 :  STD_LOGIC;
+SIGNAL	YB :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_0 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_51 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_3 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_52 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_53 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_11 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_54 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_14 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_16 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_55 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_56 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_57 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_58 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_27 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_28 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_59 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_33 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_34 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_35 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_36 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_60 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_39 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_61 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_42 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_62 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_45 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_63 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_48 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_64 :  STD_LOGIC;
+
+
+BEGIN 
+SYNTHESIZED_WIRE_0 <= '0';
+SYNTHESIZED_WIRE_51 <= '1';
+SYNTHESIZED_WIRE_3 <= '0';
+SYNTHESIZED_WIRE_52 <= '1';
+SYNTHESIZED_WIRE_53 <= '0';
+SYNTHESIZED_WIRE_11 <= '0';
+SYNTHESIZED_WIRE_54 <= '0';
+SYNTHESIZED_WIRE_14 <= '1';
+SYNTHESIZED_WIRE_16 <= '1';
+SYNTHESIZED_WIRE_55 <= '0';
+SYNTHESIZED_WIRE_56 <= '1';
+SYNTHESIZED_WIRE_57 <= '0';
+SYNTHESIZED_WIRE_58 <= '0';
+SYNTHESIZED_WIRE_27 <= '1';
+SYNTHESIZED_WIRE_28 <= '0';
+SYNTHESIZED_WIRE_33 <= '0';
+SYNTHESIZED_WIRE_35 <= '0';
+SYNTHESIZED_WIRE_36 <= '1';
+SYNTHESIZED_WIRE_60 <= '0';
+SYNTHESIZED_WIRE_39 <= '1';
+SYNTHESIZED_WIRE_61 <= '0';
+SYNTHESIZED_WIRE_42 <= '1';
+SYNTHESIZED_WIRE_62 <= '0';
+SYNTHESIZED_WIRE_45 <= '1';
+SYNTHESIZED_WIRE_63 <= '0';
+SYNTHESIZED_WIRE_48 <= '1';
+SYNTHESIZED_WIRE_64 <= '0';
+
+
+
+b2v_inst : 74283_0
+PORT MAP(CIN => SYNTHESIZED_WIRE_0,
+		 A1 => AY1,
+		 A2 => AY2,
+		 B2 => AA2,
+		 A3 => AY3,
+		 A4 => AY4,
+		 B4 => AA4,
+		 B1 => AA1,
+		 B3 => AA3,
+		 SUM4 => SUM4,
+		 COUT => SC,
+		 SUM1 => SUM1,
+		 SUM2 => SUM2,
+		 SUM3 => SUM3);
+
+
+
+b2v_inst11 : \8bitregister\
+PORT MAP(D0 => D0,
+		 D1 => D1,
+		 D2 => D2,
+		 D3 => D3,
+		 D4 => D4,
+		 D5 => D5,
+		 D6 => D6,
+		 D7 => D7,
+		 PRN => SYNTHESIZED_WIRE_51,
+		 CLK => CLK,
+		 Clear => SYNTHESIZED_WIRE_51,
+		 Q0 => Q0,
+		 Q1 => Q1,
+		 Q2 => Q2,
+		 Q3 => Q3,
+		 Q4 => Q4,
+		 Q5 => Q5,
+		 Q6 => Q6,
+		 Q7 => Q7);
+
+
+
+
+
+
+
+
+
+
+b2v_inst2 : 74151_1
+PORT MAP(GN => SYNTHESIZED_WIRE_3,
+		 C => QC1,
+		 B => QB1,
+		 A => QA1,
+		 D5 => Q5,
+		 D0 => Q0,
+		 D1 => Q1,
+		 D4 => Q4,
+		 D3 => Q3,
+		 D2 => Q2,
+		 D6 => Q6,
+		 D7 => Q7,
+		 Y => Y1);
+
+
+
+
+
+b2v_inst23 : 74161_2
+PORT MAP(CLRN => SYNTHESIZED_WIRE_52,
+		 CLK => CLK,
+		 ENP => ENP,
+		 LDN => SYNTHESIZED_WIRE_52,
+		 A => SYNTHESIZED_WIRE_53,
+		 D => SYNTHESIZED_WIRE_53,
+		 ENT => SYNTHESIZED_WIRE_52,
+		 B => SYNTHESIZED_WIRE_53,
+		 C => SYNTHESIZED_WIRE_53,
+		 QD => QD1,
+		 QC => QC1,
+		 QB => QB1,
+		 QA => QA1);
+
+
+
+b2v_inst3 : 74151_3
+PORT MAP(GN => SYNTHESIZED_WIRE_11,
+		 C => QC2,
+		 B => QB2,
+		 A => QA2,
+		 D5 => Q5,
+		 D0 => Q0,
+		 D1 => Q1,
+		 D4 => Q4,
+		 D3 => Q3,
+		 D2 => Q2,
+		 D6 => Q6,
+		 D7 => Q7,
+		 Y => Y2);
+
+
+b2v_inst30 : 74283_4
+PORT MAP(A1 => QA1,
+		 A2 => QB1,
+		 B2 => SYNTHESIZED_WIRE_54,
+		 A3 => QC1,
+		 A4 => QD1,
+		 B4 => SYNTHESIZED_WIRE_54,
+		 B1 => SYNTHESIZED_WIRE_14,
+		 B3 => SYNTHESIZED_WIRE_54,
+		 SUM1 => QA2,
+		 SUM2 => QB2,
+		 SUM3 => QC2);
+
+
+b2v_inst31 : 74283_5
+PORT MAP(A1 => QA1,
+		 A2 => QB1,
+		 B2 => SYNTHESIZED_WIRE_16,
+		 A3 => QC1,
+		 A4 => QD1,
+		 B4 => SYNTHESIZED_WIRE_55,
+		 B1 => SYNTHESIZED_WIRE_55,
+		 B3 => SYNTHESIZED_WIRE_55,
+		 SUM1 => QA3,
+		 SUM2 => QB3,
+		 SUM3 => QC3);
+
+
+
+
+b2v_inst34 : 74283_6
+PORT MAP(A1 => QA1,
+		 A2 => QB1,
+		 B2 => SYNTHESIZED_WIRE_56,
+		 A3 => QC1,
+		 A4 => QD1,
+		 B4 => SYNTHESIZED_WIRE_57,
+		 B1 => SYNTHESIZED_WIRE_56,
+		 B3 => SYNTHESIZED_WIRE_57,
+		 SUM1 => QA4,
+		 SUM2 => QB4,
+		 SUM3 => QC4);
+
+
+
+b2v_inst36 : 74283_7
+PORT MAP(A1 => QA1,
+		 A2 => QB1,
+		 B2 => SYNTHESIZED_WIRE_58,
+		 A3 => QC1,
+		 A4 => QD1,
+		 B4 => SYNTHESIZED_WIRE_58,
+		 B1 => SYNTHESIZED_WIRE_58,
+		 B3 => SYNTHESIZED_WIRE_27,
+		 SUM1 => QA5,
+		 SUM2 => QB5,
+		 SUM3 => QC5);
+
+
+
+AA1 <= A1 AND YB;
+
+
+AA2 <= A2 AND YB;
+
+
+b2v_inst4 : 74151_8
+PORT MAP(GN => SYNTHESIZED_WIRE_28,
+		 C => QC3,
+		 B => QB3,
+		 A => QA3,
+		 D5 => Q5,
+		 D0 => Q0,
+		 D1 => Q1,
+		 D4 => Q4,
+		 D3 => Q3,
+		 D2 => Q2,
+		 D6 => Q6,
+		 D7 => Q7,
+		 Y => Y3);
+
+
+AA3 <= A3 AND YB;
+
+
+AA4 <= A4 AND YB;
+
+
+SYNTHESIZED_WIRE_59 <= QB1 OR QC1 OR QA1;
+
+
+AY1 <= SYNTHESIZED_WIRE_59 AND Y1;
+
+
+AY2 <= SYNTHESIZED_WIRE_59 AND Y2;
+
+
+AY3 <= SYNTHESIZED_WIRE_59 AND Y3;
+
+
+AY4 <= SYNTHESIZED_WIRE_59 AND Y4;
+
+
+b2v_inst49 : my_or5
+PORT MAP(in1 => D01,
+		 in2 => D02,
+		 in3 => D03,
+		 in4 => D04,
+		 in5 => D05,
+		 result => D0);
+
+
+b2v_inst5 : 74151_9
+PORT MAP(GN => SYNTHESIZED_WIRE_33,
+		 C => QC4,
+		 B => QB4,
+		 A => QA4,
+		 D5 => Q5,
+		 D0 => Q0,
+		 D1 => Q1,
+		 D4 => Q4,
+		 D3 => Q3,
+		 D2 => Q2,
+		 D6 => Q6,
+		 D7 => Q7,
+		 Y => Y4);
+
+
+b2v_inst50 : my_or5
+PORT MAP(in1 => D11,
+		 in2 => D12,
+		 in3 => D13,
+		 in4 => D14,
+		 in5 => D15,
+		 result => D1);
+
+
+b2v_inst51 : my_or5
+PORT MAP(in1 => D21,
+		 in2 => D22,
+		 in3 => D23,
+		 in4 => D24,
+		 in5 => D25,
+		 result => D2);
+
+
+
+b2v_inst53 : my_or5
+PORT MAP(in1 => D31,
+		 in2 => D32,
+		 in3 => D33,
+		 in4 => D34,
+		 in5 => D35,
+		 result => D3);
+
+
+
+SYNTHESIZED_WIRE_34 <= NOT(QB1 AND QA1);
+
+
+ENP <= SYNTHESIZED_WIRE_34 AND Start;
+
+
+
+
+
+b2v_inst6 : 74151_10
+PORT MAP(GN => SYNTHESIZED_WIRE_35,
+		 C => QC1,
+		 B => QB1,
+		 A => QA1,
+		 D0 => B1,
+		 D1 => B2,
+		 D3 => B4,
+		 D2 => B3,
+		 Y => YB);
+
+
+
+
+b2v_inst62 : my_or5
+PORT MAP(in1 => D41,
+		 in2 => D42,
+		 in3 => D43,
+		 in4 => D44,
+		 in5 => D45,
+		 result => D4);
+
+
+b2v_inst63 : my_or5
+PORT MAP(in1 => D51,
+		 in2 => D52,
+		 in3 => D53,
+		 in4 => D54,
+		 in5 => D55,
+		 result => D5);
+
+
+b2v_inst64 : my_or5
+PORT MAP(in1 => D61,
+		 in2 => D62,
+		 in3 => D63,
+		 in4 => D64,
+		 in5 => D65,
+		 result => D6);
+
+
+b2v_inst65 : \74138formulti\
+PORT MAP(Data => SC,
+		 A => QA5,
+		 B => QB5,
+		 C => QC5,
+		 G1 => SYNTHESIZED_WIRE_36,
+		 G2/ => SYNTHESIZED_WIRE_60,
+		 G3/ => SYNTHESIZED_WIRE_60,
+		 Y0 => D05,
+		 Y1 => D15,
+		 Y2 => D25,
+		 Y3 => D35,
+		 Y4 => D45,
+		 Y5 => D55,
+		 Y6 => D65,
+		 Y7 => D75);
+
+
+b2v_inst66 : \74138formulti\
+PORT MAP(Data => SUM1,
+		 A => QA1,
+		 B => QB1,
+		 C => QC1,
+		 G1 => SYNTHESIZED_WIRE_39,
+		 G2/ => SYNTHESIZED_WIRE_61,
+		 G3/ => SYNTHESIZED_WIRE_61,
+		 Y0 => D01,
+		 Y1 => D11,
+		 Y2 => D21,
+		 Y3 => D31,
+		 Y4 => D41,
+		 Y5 => D51,
+		 Y6 => D61,
+		 Y7 => D71);
+
+
+b2v_inst67 : \74138formulti\
+PORT MAP(Data => SUM2,
+		 A => QA2,
+		 B => QB2,
+		 C => QC2,
+		 G1 => SYNTHESIZED_WIRE_42,
+		 G2/ => SYNTHESIZED_WIRE_62,
+		 G3/ => SYNTHESIZED_WIRE_62,
+		 Y0 => D02,
+		 Y1 => D12,
+		 Y2 => D22,
+		 Y3 => D32,
+		 Y4 => D42,
+		 Y5 => D52,
+		 Y6 => D62,
+		 Y7 => D72);
+
+
+b2v_inst68 : \74138formulti\
+PORT MAP(Data => SUM3,
+		 A => QA3,
+		 B => QB3,
+		 C => QC3,
+		 G1 => SYNTHESIZED_WIRE_45,
+		 G2/ => SYNTHESIZED_WIRE_63,
+		 G3/ => SYNTHESIZED_WIRE_63,
+		 Y0 => D03,
+		 Y1 => D13,
+		 Y2 => D23,
+		 Y3 => D33,
+		 Y4 => D43,
+		 Y5 => D53,
+		 Y6 => D63,
+		 Y7 => D73);
+
+
+b2v_inst69 : \74138formulti\
+PORT MAP(Data => SUM4,
+		 A => QA4,
+		 B => QB4,
+		 C => QC4,
+		 G1 => SYNTHESIZED_WIRE_48,
+		 G2/ => SYNTHESIZED_WIRE_64,
+		 G3/ => SYNTHESIZED_WIRE_64,
+		 Y0 => D04,
+		 Y1 => D14,
+		 Y2 => D24,
+		 Y3 => D34,
+		 Y4 => D44,
+		 Y5 => D54,
+		 Y6 => D64,
+		 Y7 => D74);
+
+
+
+b2v_inst70 : my_or5
+PORT MAP(in1 => D71,
+		 in2 => D72,
+		 in3 => D73,
+		 in4 => D74,
+		 in5 => D75,
+		 result => D7);
+
+
+
+M1 <= Q0;
+M2 <= Q1;
+M3 <= Q2;
+M4 <= Q3;
+M5 <= Q4;
+M6 <= Q5;
+M7 <= Q6;
+M8 <= Q7;
+
+END bdf_type;

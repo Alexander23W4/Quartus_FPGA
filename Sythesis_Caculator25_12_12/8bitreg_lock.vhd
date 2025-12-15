@@ -1,0 +1,292 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+-- 8位自锁寄存器（引脚全部分开）
+entity latch_8bit_separate is
+    port (
+        -- 时钟和使能
+        clk      : in std_logic;        -- 时钟（不用时钟时可接高电平）
+        set      : in std_logic;        -- 置位使能（高有效）
+        clear    : in std_logic;        -- 清零（高有效）
+        
+        -- 8位输入（分开的引脚）
+        din0     : in std_logic;        -- 输入位0
+        din1     : in std_logic;        -- 输入位1  
+        din2     : in std_logic;        -- 输入位2
+        din3     : in std_logic;        -- 输入位3
+        din4     : in std_logic;        -- 输入位4
+        din5     : in std_logic;        -- 输入位5
+        din6     : in std_logic;        -- 输入位6
+        din7     : in std_logic;        -- 输入位7
+        
+        -- 8位输出（分开的引脚）
+        dout0    : out std_logic;       -- 输出位0
+        dout1    : out std_logic;       -- 输出位1
+        dout2    : out std_logic;       -- 输出位2
+        dout3    : out std_logic;       -- 输出位3
+        dout4    : out std_logic;       -- 输出位4
+        dout5    : out std_logic;       -- 输出位5
+        dout6    : out std_logic;       -- 输出位6
+        dout7    : out std_logic        -- 输出位7
+    );
+end entity latch_8bit_separate;
+
+architecture behavioral of latch_8bit_separate is
+    -- 内部寄存器位
+    signal reg0, reg1, reg2, reg3, reg4, reg5, reg6, reg7 : std_logic := '0';
+    
+    -- 反馈信号
+    signal fb0, fb1, fb2, fb3, fb4, fb5, fb6, fb7 : std_logic;
+begin
+    -- 反馈逻辑：输入或已锁存的值
+    fb0 <= din0 or reg0;
+    fb1 <= din1 or reg1;
+    fb2 <= din2 or reg2;
+    fb3 <= din3 or reg3;
+    fb4 <= din4 or reg4;
+    fb5 <= din5 or reg5;
+    fb6 <= din6 or reg6;
+    fb7 <= din7 or reg7;
+    
+    -- 8个独立的D触发器（相当于8个7474）
+    
+    -- 位0触发器
+    process(clk, clear)
+    begin
+        if clear = '1' then
+            reg0 <= '0';
+        elsif rising_edge(clk) then
+            if set = '1' then
+                reg0 <= fb0;
+            end if;
+        end if;
+    end process;
+    
+    -- 位1触发器
+    process(clk, clear)
+    begin
+        if clear = '1' then
+            reg1 <= '0';
+        elsif rising_edge(clk) then
+            if set = '1' then
+                reg1 <= fb1;
+            end if;
+        end if;
+    end process;
+    
+    -- 位2触发器
+    process(clk, clear)
+    begin
+        if clear = '1' then
+            reg2 <= '0';
+        elsif rising_edge(clk) then
+            if set = '1' then
+                reg2 <= fb2;
+            end if;
+        end if;
+    end process;
+    
+    -- 位3触发器
+    process(clk, clear)
+    begin
+        if clear = '1' then
+            reg3 <= '0';
+        elsif rising_edge(clk) then
+            if set = '1' then
+                reg3 <= fb3;
+            end if;
+        end if;
+    end process;
+    
+    -- 位4触发器
+    process(clk, clear)
+    begin
+        if clear = '1' then
+            reg4 <= '0';
+        elsif rising_edge(clk) then
+            if set = '1' then
+                reg4 <= fb4;
+            end if;
+        end if;
+    end process;
+    
+    -- 位5触发器
+    process(clk, clear)
+    begin
+        if clear = '1' then
+            reg5 <= '0';
+        elsif rising_edge(clk) then
+            if set = '1' then
+                reg5 <= fb5;
+            end if;
+        end if;
+    end process;
+    
+    -- 位6触发器
+    process(clk, clear)
+    begin
+        if clear = '1' then
+            reg6 <= '0';
+        elsif rising_edge(clk) then
+            if set = '1' then
+                reg6 <= fb6;
+            end if;
+        end if;
+    end process;
+    
+    -- 位7触发器
+    process(clk, clear)
+    begin
+        if clear = '1' then
+            reg7 <= '0';
+        elsif rising_edge(clk) then
+            if set = '1' then
+                reg7 <= fb7;
+            end if;
+        end if;
+    end process;
+    
+    -- 输出连接
+    dout0 <= reg0;
+    dout1 <= reg1;
+    dout2 <= reg2;
+    dout3 <= reg3;
+    dout4 <= reg4;
+    dout5 <= reg5;
+    dout6 <= reg6;
+    dout7 <= reg7;
+end architecture behavioral;
+
+-- 更简单的电平触发版本（推荐）
+architecture simple of latch_8bit_separate is
+    signal q0, q1, q2, q3, q4, q5, q6, q7 : std_logic := '0';
+begin
+    -- 位0：一旦输入为1就锁存，直到清零
+    process(set, clear, din0)
+    begin
+        if clear = '1' then
+            q0 <= '0';
+        elsif set = '1' and din0 = '1' then
+            q0 <= '1';
+        end if;
+    end process;
+    
+    -- 位1
+    process(set, clear, din1)
+    begin
+        if clear = '1' then
+            q1 <= '0';
+        elsif set = '1' and din1 = '1' then
+            q1 <= '1';
+        end if;
+    end process;
+    
+    -- 位2
+    process(set, clear, din2)
+    begin
+        if clear = '1' then
+            q2 <= '0';
+        elsif set = '1' and din2 = '1' then
+            q2 <= '1';
+        end if;
+    end process;
+    
+    -- 位3
+    process(set, clear, din3)
+    begin
+        if clear = '1' then
+            q3 <= '0';
+        elsif set = '1' and din3 = '1' then
+            q3 <= '1';
+        end if;
+    end process;
+    
+    -- 位4
+    process(set, clear, din4)
+    begin
+        if clear = '1' then
+            q4 <= '0';
+        elsif set = '1' and din4 = '1' then
+            q4 <= '1';
+        end if;
+    end process;
+    
+    -- 位5
+    process(set, clear, din5)
+    begin
+        if clear = '1' then
+            q5 <= '0';
+        elsif set = '1' and din5 = '1' then
+            q5 <= '1';
+        end if;
+    end process;
+    
+    -- 位6
+    process(set, clear, din6)
+    begin
+        if clear = '1' then
+            q6 <= '0';
+        elsif set = '1' and din6 = '1' then
+            q6 <= '1';
+        end if;
+    end process;
+    
+    -- 位7
+    process(set, clear, din7)
+    begin
+        if clear = '1' then
+            q7 <= '0';
+        elsif set = '1' and din7 = '1' then
+            q7 <= '1';
+        end if;
+    end process;
+    
+    -- 输出
+    dout0 <= q0;
+    dout1 <= q1;
+    dout2 <= q2;
+    dout3 <= q3;
+    dout4 <= q4;
+    dout5 <= q5;
+    dout6 <= q6;
+    dout7 <= q7;
+end architecture simple;
+
+-- 简化版本2：使用generate语句
+architecture compact of latch_8bit_separate is
+    type reg_array is array (0 to 7) of std_logic;
+    signal q : reg_array := (others => '0');
+	signal d : reg_array;  -- 改为这个
+begin
+    -- 输入数组
+    d(0) <= din0;
+    d(1) <= din1;
+    d(2) <= din2;
+    d(3) <= din3;
+    d(4) <= din4;
+    d(5) <= din5;
+    d(6) <= din6;
+    d(7) <= din7;
+    
+    -- 生成8个锁存器
+    gen_latch: for i in 0 to 7 generate
+        process(set, clear, d(i))
+        begin
+            if clear = '1' then
+                q(i) <= '0';
+            elsif set = '1' and d(i) = '1' then
+                q(i) <= '1';
+            end if;
+        end process;
+    end generate;
+    
+    -- 输出
+    dout0 <= q(0);
+    dout1 <= q(1);
+    dout2 <= q(2);
+    dout3 <= q(3);
+    dout4 <= q(4);
+    dout5 <= q(5);
+    dout6 <= q(6);
+    dout7 <= q(7);
+end architecture compact;

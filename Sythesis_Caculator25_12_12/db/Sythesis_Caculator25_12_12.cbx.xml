@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Sythesis_Caculator25_12_12">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Full_Calculator|altpll0:inst|altpll:altpll_component" CBX_FILE_NAME="altpll_hv32.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
