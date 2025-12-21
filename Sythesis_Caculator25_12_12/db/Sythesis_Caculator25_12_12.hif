@@ -44,7 +44,7 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # hierarchies {
-Simulation_Circuit:inst|bcd_multiplier:inst22
+bcd_multiplier:inst22
 }
 # lmf
 |altera91sp2|quartus|lmf|maxplus2.lmf
@@ -77,7 +77,7 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # hierarchies {
-Simulation_Circuit:inst|latch_8bit_separate:inst67
+latch_8bit_separate:inst67
 }
 # lmf
 |altera91sp2|quartus|lmf|maxplus2.lmf
@@ -100,7 +100,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-Simulation_Circuit:inst|BCD_Calculator:inst19
+BCD_Calculator:inst19
 }
 # macro_sequence
 
@@ -120,9 +120,9 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst17
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst1
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst
+BCD_Calculator:inst19|4BitFullAdder:inst17
+BCD_Calculator:inst19|4BitFullAdder:inst1
+BCD_Calculator:inst19|4BitFullAdder:inst
 }
 # macro_sequence
 
@@ -142,18 +142,18 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst1
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst3
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst2
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst1
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst3
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst2
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst1
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst3
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst2
+BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst
+BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst1
+BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst3
+BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst2
+BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst
+BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst1
+BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst3
+BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst2
+BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst
+BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst1
+BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst3
+BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst2
 }
 # macro_sequence
 
@@ -173,30 +173,30 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst|1BitHalfAdder:inst1
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst|1BitHalfAdder:inst
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst1|1BitHalfAdder:inst1
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst1|1BitHalfAdder:inst
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst3|1BitHalfAdder:inst1
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst3|1BitHalfAdder:inst
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst2|1BitHalfAdder:inst1
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst2|1BitHalfAdder:inst
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst|1BitHalfAdder:inst1
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst|1BitHalfAdder:inst
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst1|1BitHalfAdder:inst1
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst1|1BitHalfAdder:inst
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst3|1BitHalfAdder:inst1
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst3|1BitHalfAdder:inst
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst2|1BitHalfAdder:inst1
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst2|1BitHalfAdder:inst
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst|1BitHalfAdder:inst1
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst|1BitHalfAdder:inst
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst1|1BitHalfAdder:inst1
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst1|1BitHalfAdder:inst
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst3|1BitHalfAdder:inst1
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst3|1BitHalfAdder:inst
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst2|1BitHalfAdder:inst1
-Simulation_Circuit:inst|BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst2|1BitHalfAdder:inst
+BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst|1BitHalfAdder:inst1
+BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst|1BitHalfAdder:inst
+BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst1|1BitHalfAdder:inst1
+BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst1|1BitHalfAdder:inst
+BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst3|1BitHalfAdder:inst1
+BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst3|1BitHalfAdder:inst
+BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst2|1BitHalfAdder:inst1
+BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst2|1BitHalfAdder:inst
+BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst|1BitHalfAdder:inst1
+BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst|1BitHalfAdder:inst
+BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst1|1BitHalfAdder:inst1
+BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst1|1BitHalfAdder:inst
+BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst3|1BitHalfAdder:inst1
+BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst3|1BitHalfAdder:inst
+BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst2|1BitHalfAdder:inst1
+BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst2|1BitHalfAdder:inst
+BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst|1BitHalfAdder:inst1
+BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst|1BitHalfAdder:inst
+BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst1|1BitHalfAdder:inst1
+BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst1|1BitHalfAdder:inst
+BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst3|1BitHalfAdder:inst1
+BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst3|1BitHalfAdder:inst
+BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst2|1BitHalfAdder:inst1
+BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst2|1BitHalfAdder:inst
 }
 # macro_sequence
 
@@ -243,7 +243,7 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # hierarchies {
-Simulation_Circuit:inst|latch_4bit_fixed:inst
+latch_4bit_fixed:inst
 }
 # lmf
 |altera91sp2|quartus|lmf|maxplus2.lmf
@@ -1809,7 +1809,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-Simulation_Circuit:inst
+|
 }
 # macro_sequence
 
@@ -1827,9 +1827,6 @@ full_calculator2.0.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-|
 }
 # macro_sequence
 
@@ -1864,9 +1861,6 @@ false
 PARAMETER_ENUM
 USR
 }
-# hierarchies {
-seg_decoder:inst3
-}
 # lmf
 |altera91sp2|quartus|lmf|maxplus2.lmf
 a36c8ec425c8a2589af98b2d4daabc3
@@ -1896,9 +1890,6 @@ AUTO_RAM_RECOGNITION
 ON
 AUTO_ROM_RECOGNITION
 ON
-}
-# hierarchies {
-altpll0:inst2
 }
 # lmf
 |altera91sp2|quartus|lmf|maxplus2.lmf
@@ -3385,9 +3376,6 @@ inclk1
 -1
 1
 }
-# hierarchies {
-altpll0:inst2|altpll:altpll_component
-}
 # macro_sequence
 
 # end
@@ -3424,9 +3412,6 @@ clk0
 -1
 3
 }
-# hierarchies {
-altpll0:inst2|altpll:altpll_component|altpll_8u32:auto_generated
-}
 # macro_sequence
 
 # end
@@ -3444,9 +3429,6 @@ key.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-key:inst1
-}
 # macro_sequence
 
 # end
@@ -3463,9 +3445,6 @@ db|Sythesis_Caculator25_12_12.(31).cnf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-key:inst1|4BitRegister:inst5
 }
 # macro_sequence
 
@@ -3504,9 +3483,6 @@ layout
 PARAMETER_SIGNED_DEC
 USR
 }
-# hierarchies {
-key:inst1|keyboard:inst1
-}
 # lmf
 |altera91sp2|quartus|lmf|maxplus2.lmf
 a36c8ec425c8a2589af98b2d4daabc3
@@ -3526,9 +3502,6 @@ db|Sythesis_Caculator25_12_12.(33).cnf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-key:inst1|8BitRegister:inst3
 }
 # macro_sequence
 

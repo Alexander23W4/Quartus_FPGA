@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY Full_Calculator2.0
+set_global_assignment -name TOP_LEVEL_ENTITY Simulation_Circuit
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:46:20  DECEMBER 12, 2025"
 set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
