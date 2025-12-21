@@ -1,5 +1,5 @@
 Flow report for BCD_Calculator
-Tue Nov 18 11:42:52 2025
+Sun Dec 21 10:04:12 2025
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +------------------------------------+----------------------------------------------+
-; Flow Status                        ; Successful - Tue Nov 18 11:42:51 2025        ;
+; Flow Status                        ; Successful - Sun Dec 21 10:04:12 2025        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; BCD_Calculator                               ;
 ; Top-level Entity Name              ; BCD_Calculator                               ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/18/2025 11:42:40 ;
+; Start date & time ; 12/21/2025 10:04:07 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; BCD_Calculator      ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ applicable agreement for further details.
 +------------------------------------+-----------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                                                     ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+-----------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 224391401220068.176343736006996                           ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 224391401220068.176628264709504                           ; --            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP             ; 85                                                        ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP             ; 0                                                         ; --            ; --          ; --             ;
 ; MISC_FILE                          ; E:/Quartus_FPGA/BCD_Calculator25_11_11/BCD_Calculator.dpf ; --            ; --          ; --             ;
@@ -90,11 +90,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 224 MB              ; 00:00:00                           ;
-; Fitter                    ; 00:00:04     ; 1.0                     ; 294 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 263 MB              ; 00:00:00                           ;
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 224 MB              ; 00:00:00                           ;
+; Fitter                    ; 00:00:02     ; 1.0                     ; 294 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 263 MB              ; 00:00:00                           ;
 ; Assembler                 ; 00:00:01     ; 1.0                     ; 227 MB              ; 00:00:00                           ;
-; Total                     ; 00:00:09     ; --                      ; --                  ; 00:00:01                           ;
+; Total                     ; 00:00:04     ; --                      ; --                  ; 00:00:01                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

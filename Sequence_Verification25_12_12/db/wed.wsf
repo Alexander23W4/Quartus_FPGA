@@ -20,13 +20,13 @@ Altera or its authorized distributors.  Please refer to the
 applicable agreement for further details.
 */
 
-VECTOR("E:/Quartus_FPGA/Sequence_Verification25_12_12/db/Sequence_Verification.sim.cvwf")
+VECTOR("E:/Quartus_FPGA/Sequence_Verification25_12_12/Sequence_Verification.vwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 505267;
-		NUMERATOR = 761;
-		DENOMINATOR = 399282;
+		ZEND = 48450;
+		NUMERATOR = 20;
+		DENOMINATOR = 1000;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -87,13 +87,13 @@ VECTOR("E:/Quartus_FPGA/Sequence_Verification25_12_12/db/Sequence_Verification.s
 	}
 }
 
-VECTOR("E:/Quartus_FPGA/Sequence_Verification25_12_12/Sequence_Verification.vwf")
+VECTOR("E:/Quartus_FPGA/Sequence_Verification25_12_12/db/Sequence_Verification.sim.cvwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 48450;
-		NUMERATOR = 20;
-		DENOMINATOR = 1000;
+		ZEND = 505267;
+		NUMERATOR = 761;
+		DENOMINATOR = 399282;
 		TOP_INDEX = 0;
 	}
 	CLOCK{

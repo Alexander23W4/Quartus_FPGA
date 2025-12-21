@@ -1,0 +1,98 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2010 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+# Date created = 08:59:36  December 21, 2025
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Sythesis_Caculator_Simulation_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C5E144C8
+set_global_assignment -name TOP_LEVEL_ENTITY Sythesis_Caculator_Simulation
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "08:59:36  DECEMBER 21, 2025"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name BDF_FILE ../Sythesis_Caculator25_12_12/4BitMulti.bdf
+set_global_assignment -name VERILOG_FILE ../Sythesis_Caculator25_12_12/4bitmulti.v
+set_global_assignment -name VHDL_FILE ../Sythesis_Caculator25_12_12/4bitmulti.vhd
+set_global_assignment -name VHDL_FILE ../Sythesis_Caculator25_12_12/4bitreg_lock.vhd
+set_global_assignment -name BDF_FILE ../Sythesis_Caculator25_12_12/4BitRegister.bdf
+set_global_assignment -name BDF_FILE ../Sythesis_Caculator25_12_12/4BitRegister_locked.bdf
+set_global_assignment -name VHDL_FILE ../Sythesis_Caculator25_12_12/8bitreg_lock.vhd
+set_global_assignment -name BDF_FILE ../Sythesis_Caculator25_12_12/8BitRegister.bdf
+set_global_assignment -name BDF_FILE ../Sythesis_Caculator25_12_12/8BitRegister_Locked.bdf
+set_global_assignment -name BDF_FILE ../Sythesis_Caculator25_12_12/74138forMulti.bdf
+set_global_assignment -name VHDL_FILE ../Sythesis_Caculator25_12_12/74151_1.vhd
+set_global_assignment -name VHDL_FILE ../Sythesis_Caculator25_12_12/74151_3.vhd
+set_global_assignment -name VHDL_FILE ../Sythesis_Caculator25_12_12/74151_8.vhd
+set_global_assignment -name VHDL_FILE ../Sythesis_Caculator25_12_12/74151_9.vhd
+set_global_assignment -name VHDL_FILE ../Sythesis_Caculator25_12_12/74151_10.vhd
+set_global_assignment -name VHDL_FILE ../Sythesis_Caculator25_12_12/74161_2.vhd
+set_global_assignment -name VHDL_FILE ../Sythesis_Caculator25_12_12/74283_0.vhd
+set_global_assignment -name VHDL_FILE ../Sythesis_Caculator25_12_12/74283_4.vhd
+set_global_assignment -name VHDL_FILE ../Sythesis_Caculator25_12_12/74283_5.vhd
+set_global_assignment -name VHDL_FILE ../Sythesis_Caculator25_12_12/74283_6.vhd
+set_global_assignment -name VHDL_FILE ../Sythesis_Caculator25_12_12/74283_7.vhd
+set_global_assignment -name VHDL_FILE ../Sythesis_Caculator25_12_12/bcd_multiple.vhd
+set_global_assignment -name BDF_FILE ../Sythesis_Caculator25_12_12/Core_Calculator.bdf
+set_global_assignment -name VHDL_FILE ../Sythesis_Caculator25_12_12/core_calculator.vhd
+set_global_assignment -name BDF_FILE ../Sythesis_Caculator25_12_12/Full_Calculator.bdf
+set_global_assignment -name BDF_FILE ../Sythesis_Caculator25_12_12/key.bdf
+set_global_assignment -name VHDL_FILE ../Sythesis_Caculator25_12_12/multiple.vhd
+set_global_assignment -name VERILOG_FILE ../Sythesis_Caculator25_12_12/my_or5.v
+set_global_assignment -name VERILOG_FILE ../Sythesis_Caculator25_12_12/or5_0.v
+set_global_assignment -name VERILOG_FILE ../Sythesis_Caculator25_12_12/or5_1.v
+set_global_assignment -name VERILOG_FILE ../Sythesis_Caculator25_12_12/or5_2.v
+set_global_assignment -name VERILOG_FILE ../Sythesis_Caculator25_12_12/or5_3.v
+set_global_assignment -name VERILOG_FILE ../Sythesis_Caculator25_12_12/or5_4.v
+set_global_assignment -name VERILOG_FILE ../Sythesis_Caculator25_12_12/or5_5.v
+set_global_assignment -name VERILOG_FILE ../Sythesis_Caculator25_12_12/or5_6.v
+set_global_assignment -name VERILOG_FILE ../Sythesis_Caculator25_12_12/or5_7.v
+set_global_assignment -name VHDL_FILE ../Sythesis_Caculator25_12_12/or5_11.vhd
+set_global_assignment -name VHDL_FILE ../Sythesis_Caculator25_12_12/or5_12.vhd
+set_global_assignment -name VHDL_FILE ../Sythesis_Caculator25_12_12/or5_13.vhd
+set_global_assignment -name VHDL_FILE ../Sythesis_Caculator25_12_12/or5_14.vhd
+set_global_assignment -name VHDL_FILE ../Sythesis_Caculator25_12_12/or5_15.vhd
+set_global_assignment -name VHDL_FILE ../Sythesis_Caculator25_12_12/or5_16.vhd
+set_global_assignment -name VHDL_FILE ../Sythesis_Caculator25_12_12/or5_17.vhd
+set_global_assignment -name VHDL_FILE ../Sythesis_Caculator25_12_12/or5_18.vhd
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name BDF_FILE Sythesis_Caculator_Simulation.bdf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"

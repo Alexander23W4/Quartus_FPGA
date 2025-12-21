@@ -20,10 +20,30 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-Sequence_Generator
+Sequence_Verification
 # storage
 db|Sequence_Verification.(0).cnf
 db|Sequence_Verification.(0).cnf
+# case_insensitive
+# source_file
+sequence_verification.bdf
+b68f1b1e14bf8ca941ebf5f7657712cc
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+Sequence_Generator
+# storage
+db|Sequence_Verification.(1).cnf
+db|Sequence_Verification.(1).cnf
 # case_insensitive
 # source_file
 sequence_generator.bdf
@@ -42,8 +62,8 @@ Sequence_Generator:inst
 # entity
 74161
 # storage
-db|Sequence_Verification.(1).cnf
-db|Sequence_Verification.(1).cnf
+db|Sequence_Verification.(2).cnf
+db|Sequence_Verification.(2).cnf
 # case_insensitive
 # source_file
 |altera|91sp2|quartus|libraries|others|maxplus2|74161.tdf
@@ -121,8 +141,8 @@ Sequence_Generator:inst|74161:inst
 # entity
 f74161
 # storage
-db|Sequence_Verification.(2).cnf
-db|Sequence_Verification.(2).cnf
+db|Sequence_Verification.(3).cnf
+db|Sequence_Verification.(3).cnf
 # case_insensitive
 # source_file
 |altera|91sp2|quartus|libraries|others|maxplus2|f74161.bdf
@@ -301,26 +321,6 @@ AUTO
 }
 # hierarchies {
 74151:inst3|f74151:sub
-}
-# macro_sequence
-
-# end
-# entity
-Sequence_Verification
-# storage
-db|Sequence_Verification.(3).cnf
-db|Sequence_Verification.(3).cnf
-# case_insensitive
-# source_file
-sequence_verification.bdf
-b68f1b1e14bf8ca941ebf5f7657712cc
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
 }
 # macro_sequence
 

@@ -36,8 +36,8 @@
 # -------------------------------------------------------------------------- #
 
 
-set_global_assignment -name FAMILY "Cyclone III"
-set_global_assignment -name DEVICE EP3C5E144C8
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE6F17C8
 set_global_assignment -name TOP_LEVEL_ENTITY BCD_Calculator
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:36:25  NOVEMBER 11, 2025"
@@ -62,5 +62,19 @@ set_global_assignment -name BDF_FILE ../AllSubtractor25_11_09/4BitFullAdderUltra
 set_global_assignment -name BDF_FILE ../AllSubtractor25_11_09/4BitFullSubtractor.bdf
 set_global_assignment -name BDF_FILE BCD_Calculator.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE incremental_db/BCD_Calculator.vwf
-set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_location_assignment PIN_A2 -to out_add_C
+set_location_assignment PIN_A5 -to out_D1
+set_location_assignment PIN_B5 -to out_D2
+set_location_assignment PIN_A4 -to out_D4
+set_location_assignment PIN_B4 -to out_D8
+set_location_assignment PIN_C3 -to out_sub_CF
+set_location_assignment PIN_N16 -to pin_in_A1
+set_location_assignment PIN_M12 -to pin_in_A2
+set_location_assignment PIN_N14 -to pin_in_A3
+set_location_assignment PIN_N13 -to pin_in_A4
+set_location_assignment PIN_P15 -to pin_in_B2
+set_location_assignment PIN_P16 -to pin_in_B3
+set_location_assignment PIN_N15 -to pin_in_B4
+set_location_assignment PIN_J14 -to pin_in_Carry
+set_location_assignment PIN_J16 -to SUB_ADD

@@ -20,6 +20,26 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
+BCD_Calculator
+# storage
+db|BCD_Calculator.(0).cnf
+db|BCD_Calculator.(0).cnf
+# case_insensitive
+# source_file
+bcd_calculator.bdf
+e0e155db5fac655bf9d8d84972d9f9a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
 4BitFullAdder
 # storage
 db|BCD_Calculator.(1).cnf
@@ -111,26 +131,6 @@ AUTO
 4BitFullAdder:inst|1BitFullAdder:inst3|1BitHalfAdder:inst
 4BitFullAdder:inst|1BitFullAdder:inst2|1BitHalfAdder:inst1
 4BitFullAdder:inst|1BitFullAdder:inst2|1BitHalfAdder:inst
-}
-# macro_sequence
-
-# end
-# entity
-BCD_Calculator
-# storage
-db|BCD_Calculator.(0).cnf
-db|BCD_Calculator.(0).cnf
-# case_insensitive
-# source_file
-bcd_calculator.bdf
-e0e155db5fac655bf9d8d84972d9f9a
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
 }
 # macro_sequence
 

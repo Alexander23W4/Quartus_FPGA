@@ -1,5 +1,5 @@
 Fitter report for Sequence_Verification
-Fri Dec 12 11:43:57 2025
+Tue Dec 16 11:50:46 2025
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -66,7 +66,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                    ;
 +------------------------------------+----------------------------------------------+
-; Fitter Status                      ; Successful - Fri Dec 12 11:43:57 2025        ;
+; Fitter Status                      ; Successful - Tue Dec 16 11:50:46 2025        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; Sequence_Verification                        ;
 ; Top-level Entity Name              ; Sequence_Verification                        ;
@@ -95,6 +95,7 @@ applicable agreement for further details.
 ; Minimum Core Junction Temperature                                          ; 0                                     ;                                       ;
 ; Maximum Core Junction Temperature                                          ; 85                                    ;                                       ;
 ; Fit Attempts to Skip                                                       ; 0                                     ; 0.0                                   ;
+; Device I/O Standard                                                        ; 2.5 V                                 ;                                       ;
 ; Use smart compilation                                                      ; Off                                   ; Off                                   ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                                    ; On                                    ;
 ; Enable compact report table                                                ; Off                                   ; Off                                   ;
@@ -156,18 +157,17 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+------------------------------------------+
-; I/O Assignment Warnings                  ;
-+----------+-------------------------------+
-; Pin Name ; Reason                        ;
-+----------+-------------------------------+
-; Seq      ; Incomplete set of assignments ;
-; QC       ; Incomplete set of assignments ;
-; QA       ; Incomplete set of assignments ;
-; QB       ; Incomplete set of assignments ;
-; OUT      ; Incomplete set of assignments ;
-; CLK      ; Incomplete set of assignments ;
-+----------+-------------------------------+
++-------------------------------------------------+
+; I/O Assignment Warnings                         ;
++----------+--------------------------------------+
+; Pin Name ; Reason                               ;
++----------+--------------------------------------+
+; Seq      ; Missing drive strength and slew rate ;
+; QC       ; Missing drive strength and slew rate ;
+; QA       ; Missing drive strength and slew rate ;
+; QB       ; Missing drive strength and slew rate ;
+; OUT      ; Missing drive strength and slew rate ;
++----------+--------------------------------------+
 
 
 +----------------------------------------------+
@@ -537,7 +537,7 @@ Note: User assignments will override these defaults. The user specified values a
 ; Compilation Hierarchy Node   ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                  ; Library Name ;
 +------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------+--------------+
 ; |Sequence_Verification       ; 10 (2)      ; 7 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 6    ; 0            ; 3 (2)        ; 0 (0)             ; 7 (0)            ; |Sequence_Verification                                               ; work         ;
-;    |74161:inst2|             ; 3 (0)       ; 3 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (0)            ; |Sequence_Verification|74161:inst2                                   ; work         ;
+;    |74161:inst2|             ; 3 (0)       ; 3 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (0)            ; |Sequence_Verification|74161:inst2                                   ;              ;
 ;       |f74161:sub|           ; 3 (3)       ; 3 (3)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (3)            ; |Sequence_Verification|74161:inst2|f74161:sub                        ; work         ;
 ;    |Sequence_Generator:inst| ; 5 (1)       ; 4 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 4 (0)            ; |Sequence_Verification|Sequence_Generator:inst                       ;              ;
 ;       |74161:inst|           ; 4 (0)       ; 4 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (0)            ; |Sequence_Verification|Sequence_Generator:inst|74161:inst            ; work         ;
@@ -842,7 +842,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Fri Dec 12 11:43:54 2025
+    Info: Processing started: Tue Dec 16 11:50:44 2025
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off Sequence_Verification -c Sequence_Verification
 Info: Selected device EP3C5E144C8 for design "Sequence_Verification"
 Info: Core supply voltage is 1.2V
@@ -915,8 +915,8 @@ Info: Started post-fitting delay annotation
 Info: Delay annotation completed successfully
 Info: Quartus II Fitter was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 294 megabytes
-    Info: Processing ended: Fri Dec 12 11:43:57 2025
+    Info: Processing ended: Tue Dec 16 11:50:47 2025
     Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 
