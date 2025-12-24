@@ -3119,12 +3119,12 @@ applicable agreement for further details.
 	(pt 1616 584)
 )
 (connector
-	(text "CF" (rect 1604 576 1619 588)(font "Arial" ))
+	(text "CF" (rect 1588 576 1603 588)(font "Arial" ))
 	(pt 1648 592)
 	(pt 1584 592)
 )
 (connector
-	(text "BL" (rect 1606 584 1618 596)(font "Arial" ))
+	(text "BL" (rect 1590 584 1602 596)(font "Arial" ))
 	(pt 1648 600)
 	(pt 1584 600)
 )

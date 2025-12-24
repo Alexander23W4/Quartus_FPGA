@@ -1,7 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
--- 8位自锁寄存器（引脚全部分开）
+-- 8位自锁寄存器
 entity latch_8bit_separate is
     port (
         -- 时钟和使能
@@ -256,7 +256,7 @@ end architecture simple;
 architecture compact of latch_8bit_separate is
     type reg_array is array (0 to 7) of std_logic;
     signal q : reg_array := (others => '0');
-    signal d : std_array;
+	signal d : reg_array;  -- 改为这个
 begin
     -- 输入数组
     d(0) <= din0;

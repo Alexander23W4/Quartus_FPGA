@@ -1,5 +1,5 @@
 Assembler report for Sythesis_Caculator25_12_12
-Sun Dec 21 14:57:33 2025
+Wed Dec 24 14:17:37 2025
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -37,11 +37,11 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Dec 21 14:57:33 2025 ;
+; Assembler Status      ; Successful - Wed Dec 24 14:17:37 2025 ;
 ; Revision Name         ; Sythesis_Caculator25_12_12            ;
-; Top-level Entity Name ; Simulation_Circuit                    ;
-; Family                ; Cyclone III                           ;
-; Device                ; EP3C5F256C6                           ;
+; Top-level Entity Name ; Full_Calculator3.0                    ;
+; Family                ; Cyclone IV E                          ;
+; Device                ; EP4CE6F17C8                           ;
 +-----------------------+---------------------------------------+
 
 
@@ -91,9 +91,9 @@ applicable agreement for further details.
 +----------------+------------------------------------------------------------------------------------+
 ; Option         ; Setting                                                                            ;
 +----------------+------------------------------------------------------------------------------------+
-; Device         ; EP3C5F256C6                                                                        ;
+; Device         ; EP4CE6F17C8                                                                        ;
 ; JTAG usercode  ; 0xFFFFFFFF                                                                         ;
-; Checksum       ; 0x000A8ACF                                                                         ;
+; Checksum       ; 0x000B8531                                                                         ;
 +----------------+------------------------------------------------------------------------------------+
 
 
@@ -103,14 +103,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sun Dec 21 14:57:32 2025
+    Info: Processing started: Wed Dec 24 14:17:37 2025
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Sythesis_Caculator25_12_12 -c Sythesis_Caculator25_12_12
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 228 megabytes
-    Info: Processing ended: Sun Dec 21 14:57:33 2025
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Wed Dec 24 14:17:37 2025
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 

@@ -1,10 +1,11 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="Sythesis_Caculator25_12_12">
-		<CBX_INST_ENTRY INSTANCE_NAME="|Simulation_Circuit|bcd_multiplier:inst22|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_dgm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Simulation_Circuit|bcd_multiplier:inst22|lpm_divide:Mod1" CBX_FILE_NAME="lpm_divide_h8m.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Simulation_Circuit|bcd_multiplier:inst22|lpm_mult:Mult0" CBX_FILE_NAME="mult_a7t.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Simulation_Circuit|bcd_multiplier:inst22|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_agm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Simulation_Circuit|bcd_multiplier:inst22|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_h8m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Full_Calculator3.0|Sythesis_Caculator2:inst|bcd_multiplier:inst22|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_jhm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Full_Calculator3.0|Sythesis_Caculator2:inst|bcd_multiplier:inst22|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_q9m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Full_Calculator3.0|altpll0:inst2|altpll:altpll_component" CBX_FILE_NAME="altpll_hv32.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Full_Calculator3.0|Sythesis_Caculator2:inst|bcd_multiplier:inst22|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_mhm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Full_Calculator3.0|Sythesis_Caculator2:inst|bcd_multiplier:inst22|lpm_divide:Mod1" CBX_FILE_NAME="lpm_divide_q9m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Full_Calculator3.0|Sythesis_Caculator2:inst|bcd_multiplier:inst22|lpm_mult:Mult0" CBX_FILE_NAME="mult_j8t.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

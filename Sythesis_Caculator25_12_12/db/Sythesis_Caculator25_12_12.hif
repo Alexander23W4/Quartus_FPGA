@@ -1,7 +1,7 @@
 Quartus II
 Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-10
-3700
+12
+1094
 OFF
 OFF
 OFF
@@ -20,1789 +20,14 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-bcd_multiplier
-# storage
-db|Sythesis_Caculator25_12_12.(2).cnf
-db|Sythesis_Caculator25_12_12.(2).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-bcd_multiple.vhd
-993c69f41de388420743fc36e6f1c2
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-bcd_multiplier:inst22
-}
-# lmf
-|altera91sp2|quartus|lmf|maxplus2.lmf
-a36c8ec425c8a2589af98b2d4daabc3
-# macro_sequence
-
-# end
-# entity
-latch_8bit_separate
-# storage
-db|Sythesis_Caculator25_12_12.(3).cnf
-db|Sythesis_Caculator25_12_12.(3).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-8bitreg_lock.vhd
-9e6d973766cc9ce7d28a8fa8f750e799
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-latch_8bit_separate:inst67
-}
-# lmf
-|altera91sp2|quartus|lmf|maxplus2.lmf
-a36c8ec425c8a2589af98b2d4daabc3
-# macro_sequence
-
-# end
-# entity
-BCD_Calculator
-# storage
-db|Sythesis_Caculator25_12_12.(4).cnf
-db|Sythesis_Caculator25_12_12.(4).cnf
-# case_insensitive
-# source_file
-|quartus_fpga|bcd_calculator25_11_11|bcd_calculator.bdf
-e0e155db5fac655bf9d8d84972d9f9a
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-BCD_Calculator:inst19
-}
-# macro_sequence
-
-# end
-# entity
-4BitFullAdder
-# storage
-db|Sythesis_Caculator25_12_12.(5).cnf
-db|Sythesis_Caculator25_12_12.(5).cnf
-# case_insensitive
-# source_file
-|quartus_fpga|bcd_calculator25_11_11|4bitfulladder.bdf
-8dbb1d78aee3b1b275c2471bb7ef312b
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-BCD_Calculator:inst19|4BitFullAdder:inst17
-BCD_Calculator:inst19|4BitFullAdder:inst1
-BCD_Calculator:inst19|4BitFullAdder:inst
-}
-# macro_sequence
-
-# end
-# entity
-1BitFullAdder
-# storage
-db|Sythesis_Caculator25_12_12.(6).cnf
-db|Sythesis_Caculator25_12_12.(6).cnf
-# case_insensitive
-# source_file
-|quartus_fpga|bcd_calculator25_11_11|1bitfulladder.bdf
-72a76c22f8b6eb8dca698dc9a3131a53
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst
-BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst1
-BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst3
-BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst2
-BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst
-BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst1
-BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst3
-BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst2
-BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst
-BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst1
-BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst3
-BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst2
-}
-# macro_sequence
-
-# end
-# entity
-1BitHalfAdder
-# storage
-db|Sythesis_Caculator25_12_12.(7).cnf
-db|Sythesis_Caculator25_12_12.(7).cnf
-# case_insensitive
-# source_file
-|quartus_fpga|bcd_calculator25_11_11|1bithalfadder.bdf
-d7b667ed146d67235bd16c54479659c
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst|1BitHalfAdder:inst1
-BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst|1BitHalfAdder:inst
-BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst1|1BitHalfAdder:inst1
-BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst1|1BitHalfAdder:inst
-BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst3|1BitHalfAdder:inst1
-BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst3|1BitHalfAdder:inst
-BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst2|1BitHalfAdder:inst1
-BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst2|1BitHalfAdder:inst
-BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst|1BitHalfAdder:inst1
-BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst|1BitHalfAdder:inst
-BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst1|1BitHalfAdder:inst1
-BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst1|1BitHalfAdder:inst
-BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst3|1BitHalfAdder:inst1
-BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst3|1BitHalfAdder:inst
-BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst2|1BitHalfAdder:inst1
-BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst2|1BitHalfAdder:inst
-BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst|1BitHalfAdder:inst1
-BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst|1BitHalfAdder:inst
-BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst1|1BitHalfAdder:inst1
-BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst1|1BitHalfAdder:inst
-BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst3|1BitHalfAdder:inst1
-BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst3|1BitHalfAdder:inst
-BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst2|1BitHalfAdder:inst1
-BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst2|1BitHalfAdder:inst
-}
-# macro_sequence
-
-# end
-# entity
-latch_test01
+Full_Calculator3.0
 # storage
 db|Sythesis_Caculator25_12_12.(0).cnf
 db|Sythesis_Caculator25_12_12.(0).cnf
 # case_insensitive
 # source_file
-latch_test01.bdf
-90c055bbc4888361bafc53725e5e646c
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-latch_4bit_fixed
-# storage
-db|Sythesis_Caculator25_12_12.(1).cnf
-db|Sythesis_Caculator25_12_12.(1).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-4bitreg_lock.vhd
-e4ab71afe6f95f15595bdae0dd143fd2
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-latch_4bit_fixed:inst
-}
-# lmf
-|altera91sp2|quartus|lmf|maxplus2.lmf
-a36c8ec425c8a2589af98b2d4daabc3
-# macro_sequence
-
-# end
-# entity
-lpm_mult
-# storage
-db|Sythesis_Caculator25_12_12.(9).cnf
-db|Sythesis_Caculator25_12_12.(9).cnf
-# case_insensitive
-# source_file
-|altera91sp2|quartus|libraries|megafunctions|lpm_mult.tdf
-6ec8d746e6da2f4aae33fe9d4e4dfb1
-7
-# user_parameter {
-AUTO_CARRY_CHAINS
-ON
-AUTO_CARRY
-USR
-IGNORE_CARRY_BUFFERS
-OFF
-IGNORE_CARRY
-USR
-AUTO_CASCADE_CHAINS
-ON
-AUTO_CASCADE
-USR
-IGNORE_CASCADE_BUFFERS
-OFF
-IGNORE_CASCADE
-USR
-LPM_WIDTHA
-4
-PARAMETER_UNKNOWN
-USR
-LPM_WIDTHB
-4
-PARAMETER_UNKNOWN
-USR
-LPM_WIDTHP
-8
-PARAMETER_UNKNOWN
-USR
-LPM_WIDTHR
-8
-PARAMETER_UNKNOWN
-USR
-LPM_WIDTHS
-1
-PARAMETER_UNKNOWN
-USR
-LPM_REPRESENTATION
-UNSIGNED
-PARAMETER_UNKNOWN
-USR
-LPM_PIPELINE
-0
-PARAMETER_UNKNOWN
-DEF
-LATENCY
-0
-PARAMETER_UNKNOWN
-DEF
-INPUT_A_IS_CONSTANT
-NO
-PARAMETER_UNKNOWN
-USR
-INPUT_B_IS_CONSTANT
-NO
-PARAMETER_UNKNOWN
-USR
-USE_EAB
-OFF
-PARAMETER_UNKNOWN
-DEF
-MAXIMIZE_SPEED
-5
-PARAMETER_UNKNOWN
-USR
-DEVICE_FAMILY
-Cyclone III
-PARAMETER_UNKNOWN
-USR
-CARRY_CHAIN
-MANUAL
-PARAMETER_UNKNOWN
-USR
-APEX20K_TECHNOLOGY_MAPPER
-LUT
-TECH_MAPPER_APEX20K
-USR
-DEDICATED_MULTIPLIER_CIRCUITRY
-AUTO
-PARAMETER_UNKNOWN
-DEF
-DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO
-0
-PARAMETER_UNKNOWN
-DEF
-DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO
-0
-PARAMETER_UNKNOWN
-DEF
-CBXI_PARAMETER
-mult_a7t
-PARAMETER_UNKNOWN
-USR
-INPUT_A_FIXED_VALUE
-Bx
-PARAMETER_UNKNOWN
-DEF
-INPUT_B_FIXED_VALUE
-Bx
-PARAMETER_UNKNOWN
-DEF
-USE_AHDL_IMPLEMENTATION
-OFF
-PARAMETER_UNKNOWN
-DEF
-}
-# used_port {
-result7
--1
-3
-result6
--1
-3
-result5
--1
-3
-result4
--1
-3
-result3
--1
-3
-result2
--1
-3
-result1
--1
-3
-result0
--1
-3
-datab3
--1
-3
-datab2
--1
-3
-datab1
--1
-3
-datab0
--1
-3
-dataa3
--1
-3
-dataa2
--1
-3
-dataa1
--1
-3
-dataa0
--1
-3
-}
-# macro_sequence
-
-# end
-# entity
-mult_a7t
-# storage
-db|Sythesis_Caculator25_12_12.(10).cnf
-db|Sythesis_Caculator25_12_12.(10).cnf
-# case_insensitive
-# source_file
-db|mult_a7t.tdf
-d5ed5168512b169ba3279fd4894b7b39
-7
-# used_port {
-result7
--1
-3
-result6
--1
-3
-result5
--1
-3
-result4
--1
-3
-result3
--1
-3
-result2
--1
-3
-result1
--1
-3
-result0
--1
-3
-datab3
--1
-3
-datab2
--1
-3
-datab1
--1
-3
-datab0
--1
-3
-dataa3
--1
-3
-dataa2
--1
-3
-dataa1
--1
-3
-dataa0
--1
-3
-}
-# macro_sequence
-
-# end
-# entity
-lpm_divide
-# storage
-db|Sythesis_Caculator25_12_12.(11).cnf
-db|Sythesis_Caculator25_12_12.(11).cnf
-# case_insensitive
-# source_file
-|altera91sp2|quartus|libraries|megafunctions|lpm_divide.tdf
-54966f81ff8a917b1dc9b9ad1a09648
-7
-# user_parameter {
-LPM_WIDTHN
-8
-PARAMETER_UNKNOWN
-USR
-LPM_WIDTHD
-8
-PARAMETER_UNKNOWN
-USR
-LPM_NREPRESENTATION
-UNSIGNED
-PARAMETER_UNKNOWN
-USR
-LPM_DREPRESENTATION
-UNSIGNED
-PARAMETER_UNKNOWN
-USR
-LPM_PIPELINE
-0
-PARAMETER_UNKNOWN
-DEF
-LPM_REMAINDERPOSITIVE
-TRUE
-PARAMETER_UNKNOWN
-DEF
-MAXIMIZE_SPEED
-5
-PARAMETER_UNKNOWN
-DEF
-CBXI_PARAMETER
-lpm_divide_h8m
-PARAMETER_UNKNOWN
-USR
-CARRY_CHAIN
-MANUAL
-PARAMETER_UNKNOWN
-USR
-OPTIMIZE_FOR_SPEED
-5
-PARAMETER_UNKNOWN
-USR
-AUTO_CARRY_CHAINS
-ON
-AUTO_CARRY
-USR
-IGNORE_CARRY_BUFFERS
-OFF
-IGNORE_CARRY
-USR
-AUTO_CASCADE_CHAINS
-ON
-AUTO_CASCADE
-USR
-IGNORE_CASCADE_BUFFERS
-OFF
-IGNORE_CASCADE
-USR
-}
-# used_port {
-remain3
--1
-3
-remain2
--1
-3
-remain1
--1
-3
-remain0
--1
-3
-numer7
--1
-3
-numer6
--1
-3
-numer5
--1
-3
-numer4
--1
-3
-numer3
--1
-3
-numer2
--1
-3
-numer1
--1
-3
-numer0
--1
-3
-denom7
--1
-1
-denom6
--1
-1
-denom5
--1
-1
-denom4
--1
-1
-denom2
--1
-1
-denom0
--1
-1
-denom3
--1
-2
-denom1
--1
-2
-}
-# macro_sequence
-
-# end
-# entity
-lpm_divide_h8m
-# storage
-db|Sythesis_Caculator25_12_12.(12).cnf
-db|Sythesis_Caculator25_12_12.(12).cnf
-# case_insensitive
-# source_file
-db|lpm_divide_h8m.tdf
-30406cb56f95fb8cae8fb9335b2ebef1
-7
-# used_port {
-remain7
--1
-3
-remain6
--1
-3
-remain5
--1
-3
-remain4
--1
-3
-remain3
--1
-3
-remain2
--1
-3
-remain1
--1
-3
-remain0
--1
-3
-numer7
--1
-3
-numer6
--1
-3
-numer5
--1
-3
-numer4
--1
-3
-numer3
--1
-3
-numer2
--1
-3
-numer1
--1
-3
-numer0
--1
-3
-denom7
--1
-3
-denom6
--1
-3
-denom5
--1
-3
-denom4
--1
-3
-denom3
--1
-3
-denom2
--1
-3
-denom1
--1
-3
-denom0
--1
-3
-}
-# macro_sequence
-
-# end
-# entity
-sign_div_unsign_fkh
-# storage
-db|Sythesis_Caculator25_12_12.(13).cnf
-db|Sythesis_Caculator25_12_12.(13).cnf
-# case_insensitive
-# source_file
-db|sign_div_unsign_fkh.tdf
-e11455a096344a1819abd8b3a37e6c0
-7
-# used_port {
-remainder7
--1
-3
-remainder6
--1
-3
-remainder5
--1
-3
-remainder4
--1
-3
-remainder3
--1
-3
-remainder2
--1
-3
-remainder1
--1
-3
-remainder0
--1
-3
-quotient7
--1
-3
-quotient6
--1
-3
-quotient5
--1
-3
-quotient4
--1
-3
-quotient3
--1
-3
-quotient2
--1
-3
-quotient1
--1
-3
-quotient0
--1
-3
-numerator7
--1
-3
-numerator6
--1
-3
-numerator5
--1
-3
-numerator4
--1
-3
-numerator3
--1
-3
-numerator2
--1
-3
-numerator1
--1
-3
-numerator0
--1
-3
-denominator7
--1
-3
-denominator6
--1
-3
-denominator5
--1
-3
-denominator4
--1
-3
-denominator3
--1
-3
-denominator2
--1
-3
-denominator1
--1
-3
-denominator0
--1
-3
-}
-# macro_sequence
-
-# end
-# entity
-alt_u_div_93f
-# storage
-db|Sythesis_Caculator25_12_12.(14).cnf
-db|Sythesis_Caculator25_12_12.(14).cnf
-# case_insensitive
-# source_file
-db|alt_u_div_93f.tdf
-e9ba7674b5247226c812a7b0f011116a
-7
-# used_port {
-remainder7
--1
-3
-remainder6
--1
-3
-remainder5
--1
-3
-remainder4
--1
-3
-remainder3
--1
-3
-remainder2
--1
-3
-remainder1
--1
-3
-remainder0
--1
-3
-quotient7
--1
-3
-quotient6
--1
-3
-quotient5
--1
-3
-quotient4
--1
-3
-quotient3
--1
-3
-quotient2
--1
-3
-quotient1
--1
-3
-quotient0
--1
-3
-numerator7
--1
-3
-numerator6
--1
-3
-numerator5
--1
-3
-numerator4
--1
-3
-numerator3
--1
-3
-numerator2
--1
-3
-numerator1
--1
-3
-numerator0
--1
-3
-denominator7
--1
-3
-denominator6
--1
-3
-denominator5
--1
-3
-denominator4
--1
-3
-denominator3
--1
-3
-denominator2
--1
-3
-denominator1
--1
-3
-denominator0
--1
-3
-}
-# macro_sequence
-
-# end
-# entity
-add_sub_unc
-# storage
-db|Sythesis_Caculator25_12_12.(15).cnf
-db|Sythesis_Caculator25_12_12.(15).cnf
-# case_insensitive
-# source_file
-db|add_sub_unc.tdf
-c3e3b314a2135e2ada3163723375b3
-7
-# used_port {
-result0
--1
-3
-datab0
--1
-3
-dataa0
--1
-3
-cout
--1
-3
-}
-# macro_sequence
-
-# end
-# entity
-add_sub_vnc
-# storage
-db|Sythesis_Caculator25_12_12.(16).cnf
-db|Sythesis_Caculator25_12_12.(16).cnf
-# case_insensitive
-# source_file
-db|add_sub_vnc.tdf
-7c57ca67aac0b7f3ab61fc4da54255bb
-7
-# used_port {
-result1
--1
-3
-result0
--1
-3
-datab1
--1
-3
-datab0
--1
-3
-dataa1
--1
-3
-dataa0
--1
-3
-cout
--1
-3
-}
-# macro_sequence
-
-# end
-# entity
-lpm_divide
-# storage
-db|Sythesis_Caculator25_12_12.(17).cnf
-db|Sythesis_Caculator25_12_12.(17).cnf
-# case_insensitive
-# source_file
-|altera91sp2|quartus|libraries|megafunctions|lpm_divide.tdf
-54966f81ff8a917b1dc9b9ad1a09648
-7
-# user_parameter {
-LPM_WIDTHN
-8
-PARAMETER_UNKNOWN
-USR
-LPM_WIDTHD
-4
-PARAMETER_UNKNOWN
-USR
-LPM_NREPRESENTATION
-UNSIGNED
-PARAMETER_UNKNOWN
-USR
-LPM_DREPRESENTATION
-UNSIGNED
-PARAMETER_UNKNOWN
-USR
-LPM_PIPELINE
-0
-PARAMETER_UNKNOWN
-DEF
-LPM_REMAINDERPOSITIVE
-TRUE
-PARAMETER_UNKNOWN
-DEF
-MAXIMIZE_SPEED
-5
-PARAMETER_UNKNOWN
-DEF
-CBXI_PARAMETER
-lpm_divide_agm
-PARAMETER_UNKNOWN
-USR
-CARRY_CHAIN
-MANUAL
-PARAMETER_UNKNOWN
-USR
-OPTIMIZE_FOR_SPEED
-5
-PARAMETER_UNKNOWN
-USR
-AUTO_CARRY_CHAINS
-ON
-AUTO_CARRY
-USR
-IGNORE_CARRY_BUFFERS
-OFF
-IGNORE_CARRY
-USR
-AUTO_CASCADE_CHAINS
-ON
-AUTO_CASCADE
-USR
-IGNORE_CASCADE_BUFFERS
-OFF
-IGNORE_CASCADE
-USR
-}
-# used_port {
-quotient7
--1
-3
-quotient6
--1
-3
-quotient5
--1
-3
-quotient4
--1
-3
-quotient3
--1
-3
-quotient2
--1
-3
-quotient1
--1
-3
-quotient0
--1
-3
-numer7
--1
-3
-numer6
--1
-3
-numer5
--1
-3
-numer4
--1
-3
-numer3
--1
-3
-numer2
--1
-3
-numer1
--1
-3
-numer0
--1
-3
-denom2
--1
-1
-denom0
--1
-1
-denom3
--1
-2
-denom1
--1
-2
-}
-# macro_sequence
-
-# end
-# entity
-lpm_divide_agm
-# storage
-db|Sythesis_Caculator25_12_12.(18).cnf
-db|Sythesis_Caculator25_12_12.(18).cnf
-# case_insensitive
-# source_file
-db|lpm_divide_agm.tdf
-12252c364e6b97dd83788af486bb049
-7
-# used_port {
-quotient7
--1
-3
-quotient6
--1
-3
-quotient5
--1
-3
-quotient4
--1
-3
-quotient3
--1
-3
-quotient2
--1
-3
-quotient1
--1
-3
-quotient0
--1
-3
-numer7
--1
-3
-numer6
--1
-3
-numer5
--1
-3
-numer4
--1
-3
-numer3
--1
-3
-numer2
--1
-3
-numer1
--1
-3
-numer0
--1
-3
-denom3
--1
-3
-denom2
--1
-3
-denom1
--1
-3
-denom0
--1
-3
-}
-# macro_sequence
-
-# end
-# entity
-sign_div_unsign_bkh
-# storage
-db|Sythesis_Caculator25_12_12.(19).cnf
-db|Sythesis_Caculator25_12_12.(19).cnf
-# case_insensitive
-# source_file
-db|sign_div_unsign_bkh.tdf
-48175b27368c31569ec9f5c25fe012
-7
-# used_port {
-remainder3
--1
-3
-remainder2
--1
-3
-remainder1
--1
-3
-remainder0
--1
-3
-quotient7
--1
-3
-quotient6
--1
-3
-quotient5
--1
-3
-quotient4
--1
-3
-quotient3
--1
-3
-quotient2
--1
-3
-quotient1
--1
-3
-quotient0
--1
-3
-numerator7
--1
-3
-numerator6
--1
-3
-numerator5
--1
-3
-numerator4
--1
-3
-numerator3
--1
-3
-numerator2
--1
-3
-numerator1
--1
-3
-numerator0
--1
-3
-denominator3
--1
-3
-denominator2
--1
-3
-denominator1
--1
-3
-denominator0
--1
-3
-}
-# macro_sequence
-
-# end
-# entity
-alt_u_div_13f
-# storage
-db|Sythesis_Caculator25_12_12.(20).cnf
-db|Sythesis_Caculator25_12_12.(20).cnf
-# case_insensitive
-# source_file
-db|alt_u_div_13f.tdf
-438ad41728aa123d8448d224cf3137e
-7
-# used_port {
-remainder3
--1
-3
-remainder2
--1
-3
-remainder1
--1
-3
-remainder0
--1
-3
-quotient7
--1
-3
-quotient6
--1
-3
-quotient5
--1
-3
-quotient4
--1
-3
-quotient3
--1
-3
-quotient2
--1
-3
-quotient1
--1
-3
-quotient0
--1
-3
-numerator7
--1
-3
-numerator6
--1
-3
-numerator5
--1
-3
-numerator4
--1
-3
-numerator3
--1
-3
-numerator2
--1
-3
-numerator1
--1
-3
-numerator0
--1
-3
-denominator3
--1
-3
-denominator2
--1
-3
-denominator1
--1
-3
-denominator0
--1
-3
-}
-# macro_sequence
-
-# end
-# entity
-lpm_divide
-# storage
-db|Sythesis_Caculator25_12_12.(21).cnf
-db|Sythesis_Caculator25_12_12.(21).cnf
-# case_insensitive
-# source_file
-|altera91sp2|quartus|libraries|megafunctions|lpm_divide.tdf
-54966f81ff8a917b1dc9b9ad1a09648
-7
-# user_parameter {
-LPM_WIDTHN
-8
-PARAMETER_UNKNOWN
-USR
-LPM_WIDTHD
-7
-PARAMETER_UNKNOWN
-USR
-LPM_NREPRESENTATION
-UNSIGNED
-PARAMETER_UNKNOWN
-USR
-LPM_DREPRESENTATION
-UNSIGNED
-PARAMETER_UNKNOWN
-USR
-LPM_PIPELINE
-0
-PARAMETER_UNKNOWN
-DEF
-LPM_REMAINDERPOSITIVE
-TRUE
-PARAMETER_UNKNOWN
-DEF
-MAXIMIZE_SPEED
-5
-PARAMETER_UNKNOWN
-DEF
-CBXI_PARAMETER
-lpm_divide_dgm
-PARAMETER_UNKNOWN
-USR
-CARRY_CHAIN
-MANUAL
-PARAMETER_UNKNOWN
-USR
-OPTIMIZE_FOR_SPEED
-5
-PARAMETER_UNKNOWN
-USR
-AUTO_CARRY_CHAINS
-ON
-AUTO_CARRY
-USR
-IGNORE_CARRY_BUFFERS
-OFF
-IGNORE_CARRY
-USR
-AUTO_CASCADE_CHAINS
-ON
-AUTO_CASCADE
-USR
-IGNORE_CASCADE_BUFFERS
-OFF
-IGNORE_CASCADE
-USR
-}
-# used_port {
-quotient3
--1
-3
-quotient2
--1
-3
-quotient1
--1
-3
-quotient0
--1
-3
-numer7
--1
-3
-numer6
--1
-3
-numer5
--1
-3
-numer4
--1
-3
-numer3
--1
-3
-numer2
--1
-3
-numer1
--1
-3
-numer0
--1
-3
-denom4
--1
-1
-denom3
--1
-1
-denom1
--1
-1
-denom0
--1
-1
-denom6
--1
-2
-denom5
--1
-2
-denom2
--1
-2
-}
-# macro_sequence
-
-# end
-# entity
-lpm_divide_dgm
-# storage
-db|Sythesis_Caculator25_12_12.(22).cnf
-db|Sythesis_Caculator25_12_12.(22).cnf
-# case_insensitive
-# source_file
-db|lpm_divide_dgm.tdf
-56c89de17698bd321cb6cb549d6df
-7
-# used_port {
-quotient7
--1
-3
-quotient6
--1
-3
-quotient5
--1
-3
-quotient4
--1
-3
-quotient3
--1
-3
-quotient2
--1
-3
-quotient1
--1
-3
-quotient0
--1
-3
-numer7
--1
-3
-numer6
--1
-3
-numer5
--1
-3
-numer4
--1
-3
-numer3
--1
-3
-numer2
--1
-3
-numer1
--1
-3
-numer0
--1
-3
-denom6
--1
-3
-denom5
--1
-3
-denom4
--1
-3
-denom3
--1
-3
-denom2
--1
-3
-denom1
--1
-3
-denom0
--1
-3
-}
-# macro_sequence
-
-# end
-# entity
-sign_div_unsign_ekh
-# storage
-db|Sythesis_Caculator25_12_12.(23).cnf
-db|Sythesis_Caculator25_12_12.(23).cnf
-# case_insensitive
-# source_file
-db|sign_div_unsign_ekh.tdf
-47da7f4e9caa43783e35a5a0a4655
-7
-# used_port {
-remainder6
--1
-3
-remainder5
--1
-3
-remainder4
--1
-3
-remainder3
--1
-3
-remainder2
--1
-3
-remainder1
--1
-3
-remainder0
--1
-3
-quotient7
--1
-3
-quotient6
--1
-3
-quotient5
--1
-3
-quotient4
--1
-3
-quotient3
--1
-3
-quotient2
--1
-3
-quotient1
--1
-3
-quotient0
--1
-3
-numerator7
--1
-3
-numerator6
--1
-3
-numerator5
--1
-3
-numerator4
--1
-3
-numerator3
--1
-3
-numerator2
--1
-3
-numerator1
--1
-3
-numerator0
--1
-3
-denominator6
--1
-3
-denominator5
--1
-3
-denominator4
--1
-3
-denominator3
--1
-3
-denominator2
--1
-3
-denominator1
--1
-3
-denominator0
--1
-3
-}
-# macro_sequence
-
-# end
-# entity
-alt_u_div_73f
-# storage
-db|Sythesis_Caculator25_12_12.(24).cnf
-db|Sythesis_Caculator25_12_12.(24).cnf
-# case_insensitive
-# source_file
-db|alt_u_div_73f.tdf
-81747332e9a9d4ce7697af9139e59
-7
-# used_port {
-remainder6
--1
-3
-remainder5
--1
-3
-remainder4
--1
-3
-remainder3
--1
-3
-remainder2
--1
-3
-remainder1
--1
-3
-remainder0
--1
-3
-quotient7
--1
-3
-quotient6
--1
-3
-quotient5
--1
-3
-quotient4
--1
-3
-quotient3
--1
-3
-quotient2
--1
-3
-quotient1
--1
-3
-quotient0
--1
-3
-numerator7
--1
-3
-numerator6
--1
-3
-numerator5
--1
-3
-numerator4
--1
-3
-numerator3
--1
-3
-numerator2
--1
-3
-numerator1
--1
-3
-numerator0
--1
-3
-denominator6
--1
-3
-denominator5
--1
-3
-denominator4
--1
-3
-denominator3
--1
-3
-denominator2
--1
-3
-denominator1
--1
-3
-denominator0
--1
-3
-}
-# macro_sequence
-
-# end
-# entity
-Simulation_Circuit
-# storage
-db|Sythesis_Caculator25_12_12.(8).cnf
-db|Sythesis_Caculator25_12_12.(8).cnf
-# case_insensitive
-# source_file
-simulation_circuit.bdf
-ab529b2b53904e93fbeca843e70fda5
+full_calculator3.0.bdf
+c8b6ba674732557ba62a86a2dedaf2a2
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -1815,27 +40,10 @@ AUTO
 
 # end
 # entity
-Full_Calculator2.0
-# storage
-db|Sythesis_Caculator25_12_12.(25).cnf
-db|Sythesis_Caculator25_12_12.(25).cnf
-# case_insensitive
-# source_file
-full_calculator2.0.bdf
-147279e5e9672c017b376bff770f23e
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
 seg_decoder
 # storage
-db|Sythesis_Caculator25_12_12.(26).cnf
-db|Sythesis_Caculator25_12_12.(26).cnf
+db|Sythesis_Caculator25_12_12.(1).cnf
+db|Sythesis_Caculator25_12_12.(1).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -1861,6 +69,9 @@ false
 PARAMETER_ENUM
 USR
 }
+# hierarchies {
+seg_decoder:inst3
+}
 # lmf
 |altera91sp2|quartus|lmf|maxplus2.lmf
 a36c8ec425c8a2589af98b2d4daabc3
@@ -1870,8 +81,8 @@ a36c8ec425c8a2589af98b2d4daabc3
 # entity
 altpll0
 # storage
-db|Sythesis_Caculator25_12_12.(27).cnf
-db|Sythesis_Caculator25_12_12.(27).cnf
+db|Sythesis_Caculator25_12_12.(2).cnf
+db|Sythesis_Caculator25_12_12.(2).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -1891,6 +102,9 @@ ON
 AUTO_ROM_RECOGNITION
 ON
 }
+# hierarchies {
+altpll0:inst2
+}
 # lmf
 |altera91sp2|quartus|lmf|maxplus2.lmf
 a36c8ec425c8a2589af98b2d4daabc3
@@ -1900,8 +114,8 @@ a36c8ec425c8a2589af98b2d4daabc3
 # entity
 altpll
 # storage
-db|Sythesis_Caculator25_12_12.(28).cnf
-db|Sythesis_Caculator25_12_12.(28).cnf
+db|Sythesis_Caculator25_12_12.(3).cnf
+db|Sythesis_Caculator25_12_12.(3).cnf
 # case_insensitive
 # source_file
 |altera91sp2|quartus|libraries|megafunctions|altpll.tdf
@@ -3313,7 +1527,7 @@ C9_TEST_SOURCE
 PARAMETER_UNKNOWN
 DEF
 CBXI_PARAMETER
-altpll_8u32
+altpll_hv32
 PARAMETER_UNKNOWN
 USR
 VCO_FREQUENCY_CONTROL
@@ -3337,7 +1551,7 @@ OFF
 PARAMETER_UNKNOWN
 DEF
 DEVICE_FAMILY
-Cyclone III
+Cyclone IV E
 PARAMETER_UNKNOWN
 USR
 SCAN_CHAIN_MIF_FILE
@@ -3376,18 +1590,21 @@ inclk1
 -1
 1
 }
+# hierarchies {
+altpll0:inst2|altpll:altpll_component
+}
 # macro_sequence
 
 # end
 # entity
-altpll_8u32
+altpll_hv32
 # storage
-db|Sythesis_Caculator25_12_12.(29).cnf
-db|Sythesis_Caculator25_12_12.(29).cnf
+db|Sythesis_Caculator25_12_12.(4).cnf
+db|Sythesis_Caculator25_12_12.(4).cnf
 # case_insensitive
 # source_file
-db|altpll_8u32.tdf
-3ab3c624c144c58f43125c4faaf2a68d
+db|altpll_hv32.tdf
+4e41464ccd44b5776d0c44ace444246
 7
 # used_port {
 inclk1
@@ -3412,39 +1629,470 @@ clk0
 -1
 3
 }
-# macro_sequence
-
-# end
-# entity
-key
-# storage
-db|Sythesis_Caculator25_12_12.(30).cnf
-db|Sythesis_Caculator25_12_12.(30).cnf
-# case_insensitive
-# source_file
-key.bdf
-44a7102943a2f4dc1e4a115866110a5
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
+# hierarchies {
+altpll0:inst2|altpll:altpll_component|altpll_hv32:auto_generated
 }
 # macro_sequence
 
 # end
 # entity
-4BitRegister
+Sythesis_Caculator2
 # storage
-db|Sythesis_Caculator25_12_12.(31).cnf
-db|Sythesis_Caculator25_12_12.(31).cnf
+db|Sythesis_Caculator25_12_12.(5).cnf
+db|Sythesis_Caculator25_12_12.(5).cnf
 # case_insensitive
 # source_file
-4bitregister.bdf
-7e32c94c6396cca82d7d4d384be4fdd3
+sythesis_caculator2.bdf
+8b21e8c1ee2722e994dd9e5b6de9c5bf
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
+}
+# hierarchies {
+Sythesis_Caculator2:inst
+}
+# macro_sequence
+
+# end
+# entity
+latch_8bit_separate
+# storage
+db|Sythesis_Caculator25_12_12.(6).cnf
+db|Sythesis_Caculator25_12_12.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+8bitreg_lock.vhd
+9e6d973766cc9ce7d28a8fa8f750e799
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Sythesis_Caculator2:inst|latch_8bit_separate:inst67
+}
+# lmf
+|altera91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+delay4
+# storage
+db|Sythesis_Caculator25_12_12.(7).cnf
+db|Sythesis_Caculator25_12_12.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+delay4.v
+eedb8f5b7b552d2c04874851865d11b
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+Sythesis_Caculator2:inst|delay4:inst92
+Sythesis_Caculator2:inst|delay4:inst93
+Sythesis_Caculator2:inst|delay4:inst94
+}
+# macro_sequence
+
+# end
+# entity
+latch_4bit_fixed
+# storage
+db|Sythesis_Caculator25_12_12.(8).cnf
+db|Sythesis_Caculator25_12_12.(8).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+4bitreg_lock.vhd
+e4ab71afe6f95f15595bdae0dd143fd2
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Sythesis_Caculator2:inst|latch_4bit_fixed:inst2
+Sythesis_Caculator2:inst|latch_4bit_fixed:inst
+}
+# lmf
+|altera91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+4BitFullSubtractor
+# storage
+db|Sythesis_Caculator25_12_12.(9).cnf
+db|Sythesis_Caculator25_12_12.(9).cnf
+# case_insensitive
+# source_file
+|quartus_fpga|bcd_calculator25_11_11|4bitfullsubtractor.bdf
+2b6fd9f433cc232614ad676350b41727
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Sythesis_Caculator2:inst|4BitFullSubtractor:inst12
+}
+# macro_sequence
+
+# end
+# entity
+4BitFullAdderUltra
+# storage
+db|Sythesis_Caculator25_12_12.(10).cnf
+db|Sythesis_Caculator25_12_12.(10).cnf
+# case_insensitive
+# source_file
+|quartus_fpga|bcd_calculator25_11_11|4bitfulladderultra.bdf
+e7318dfb9ddd8bd5bee41a29be95f485
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Sythesis_Caculator2:inst|4BitFullSubtractor:inst12|4BitFullAdderUltra:inst1
+}
+# macro_sequence
+
+# end
+# entity
+4BitFullAdder
+# storage
+db|Sythesis_Caculator25_12_12.(11).cnf
+db|Sythesis_Caculator25_12_12.(11).cnf
+# case_insensitive
+# source_file
+|quartus_fpga|bcd_calculator25_11_11|4bitfulladder.bdf
+8dbb1d78aee3b1b275c2471bb7ef312b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Sythesis_Caculator2:inst|4BitFullSubtractor:inst12|4BitFullAdderUltra:inst1|4BitFullAdder:inst3
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst17
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst1
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst
+}
+# macro_sequence
+
+# end
+# entity
+1BitFullAdder
+# storage
+db|Sythesis_Caculator25_12_12.(12).cnf
+db|Sythesis_Caculator25_12_12.(12).cnf
+# case_insensitive
+# source_file
+|quartus_fpga|bcd_calculator25_11_11|1bitfulladder.bdf
+72a76c22f8b6eb8dca698dc9a3131a53
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Sythesis_Caculator2:inst|4BitFullSubtractor:inst12|4BitFullAdderUltra:inst1|4BitFullAdder:inst3|1BitFullAdder:inst
+Sythesis_Caculator2:inst|4BitFullSubtractor:inst12|4BitFullAdderUltra:inst1|4BitFullAdder:inst3|1BitFullAdder:inst1
+Sythesis_Caculator2:inst|4BitFullSubtractor:inst12|4BitFullAdderUltra:inst1|4BitFullAdder:inst3|1BitFullAdder:inst3
+Sythesis_Caculator2:inst|4BitFullSubtractor:inst12|4BitFullAdderUltra:inst1|4BitFullAdder:inst3|1BitFullAdder:inst2
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst1
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst3
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst2
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst1
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst3
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst2
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst1
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst3
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst2
+}
+# macro_sequence
+
+# end
+# entity
+1BitHalfAdder
+# storage
+db|Sythesis_Caculator25_12_12.(13).cnf
+db|Sythesis_Caculator25_12_12.(13).cnf
+# case_insensitive
+# source_file
+|quartus_fpga|bcd_calculator25_11_11|1bithalfadder.bdf
+d7b667ed146d67235bd16c54479659c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Sythesis_Caculator2:inst|4BitFullSubtractor:inst12|4BitFullAdderUltra:inst1|4BitFullAdder:inst3|1BitFullAdder:inst|1BitHalfAdder:inst1
+Sythesis_Caculator2:inst|4BitFullSubtractor:inst12|4BitFullAdderUltra:inst1|4BitFullAdder:inst3|1BitFullAdder:inst|1BitHalfAdder:inst
+Sythesis_Caculator2:inst|4BitFullSubtractor:inst12|4BitFullAdderUltra:inst1|4BitFullAdder:inst3|1BitFullAdder:inst1|1BitHalfAdder:inst1
+Sythesis_Caculator2:inst|4BitFullSubtractor:inst12|4BitFullAdderUltra:inst1|4BitFullAdder:inst3|1BitFullAdder:inst1|1BitHalfAdder:inst
+Sythesis_Caculator2:inst|4BitFullSubtractor:inst12|4BitFullAdderUltra:inst1|4BitFullAdder:inst3|1BitFullAdder:inst3|1BitHalfAdder:inst1
+Sythesis_Caculator2:inst|4BitFullSubtractor:inst12|4BitFullAdderUltra:inst1|4BitFullAdder:inst3|1BitFullAdder:inst3|1BitHalfAdder:inst
+Sythesis_Caculator2:inst|4BitFullSubtractor:inst12|4BitFullAdderUltra:inst1|4BitFullAdder:inst3|1BitFullAdder:inst2|1BitHalfAdder:inst1
+Sythesis_Caculator2:inst|4BitFullSubtractor:inst12|4BitFullAdderUltra:inst1|4BitFullAdder:inst3|1BitFullAdder:inst2|1BitHalfAdder:inst
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst|1BitHalfAdder:inst1
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst|1BitHalfAdder:inst
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst1|1BitHalfAdder:inst1
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst1|1BitHalfAdder:inst
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst3|1BitHalfAdder:inst1
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst3|1BitHalfAdder:inst
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst2|1BitHalfAdder:inst1
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst17|1BitFullAdder:inst2|1BitHalfAdder:inst
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst|1BitHalfAdder:inst1
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst|1BitHalfAdder:inst
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst1|1BitHalfAdder:inst1
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst1|1BitHalfAdder:inst
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst3|1BitHalfAdder:inst1
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst3|1BitHalfAdder:inst
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst2|1BitHalfAdder:inst1
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst1|1BitFullAdder:inst2|1BitHalfAdder:inst
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst|1BitHalfAdder:inst1
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst|1BitHalfAdder:inst
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst1|1BitHalfAdder:inst1
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst1|1BitHalfAdder:inst
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst3|1BitHalfAdder:inst1
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst3|1BitHalfAdder:inst
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst2|1BitHalfAdder:inst1
+Sythesis_Caculator2:inst|BCD_Calculator:inst19|4BitFullAdder:inst|1BitFullAdder:inst2|1BitHalfAdder:inst
+}
+# macro_sequence
+
+# end
+# entity
+74283
+# storage
+db|Sythesis_Caculator25_12_12.(14).cnf
+db|Sythesis_Caculator25_12_12.(14).cnf
+# case_insensitive
+# source_file
+|altera91sp2|quartus|libraries|others|maxplus2|74283.tdf
+a937078c0865ce0d82244397bd88a2c
+7
+# user_parameter {
+DEVICE_FAMILY
+Cyclone IV E
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+SUM4
+-1
+3
+SUM3
+-1
+3
+SUM2
+-1
+3
+SUM1
+-1
+3
+CIN
+-1
+3
+A4
+-1
+3
+A3
+-1
+3
+A2
+-1
+3
+A1
+-1
+3
+B4
+-1
+1
+B3
+-1
+1
+B2
+-1
+1
+B1
+-1
+1
+}
+# hierarchies {
+Sythesis_Caculator2:inst|4BitFullSubtractor:inst12|74283:inst2
+}
+# macro_sequence
+
+# end
+# entity
+f74283
+# storage
+db|Sythesis_Caculator25_12_12.(15).cnf
+db|Sythesis_Caculator25_12_12.(15).cnf
+# case_insensitive
+# source_file
+|altera91sp2|quartus|libraries|others|maxplus2|f74283.bdf
+e7196949c2eee906273cd5c3cb3c346
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Sythesis_Caculator2:inst|4BitFullSubtractor:inst12|74283:inst2|f74283:sub
+}
+# macro_sequence
+
+# end
+# entity
+op_sel
+# storage
+db|Sythesis_Caculator25_12_12.(16).cnf
+db|Sythesis_Caculator25_12_12.(16).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+op_sel.v
+9e43cd6aa5692a2fb108ff59aa2e814
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+Sythesis_Caculator2:inst|op_sel:inst86
+}
+# macro_sequence
+
+# end
+# entity
+bcd_multiplier
+# storage
+db|Sythesis_Caculator25_12_12.(17).cnf
+db|Sythesis_Caculator25_12_12.(17).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+bcd_multiple.vhd
+993c69f41de388420743fc36e6f1c2
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Sythesis_Caculator2:inst|bcd_multiplier:inst22
+}
+# lmf
+|altera91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+BCD_Calculator
+# storage
+db|Sythesis_Caculator25_12_12.(18).cnf
+db|Sythesis_Caculator25_12_12.(18).cnf
+# case_insensitive
+# source_file
+|quartus_fpga|bcd_calculator25_11_11|bcd_calculator.bdf
+e0e155db5fac655bf9d8d84972d9f9a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Sythesis_Caculator2:inst|BCD_Calculator:inst19
 }
 # macro_sequence
 
@@ -3452,8 +2100,8 @@ AUTO
 # entity
 keyboard
 # storage
-db|Sythesis_Caculator25_12_12.(32).cnf
-db|Sythesis_Caculator25_12_12.(32).cnf
+db|Sythesis_Caculator25_12_12.(19).cnf
+db|Sythesis_Caculator25_12_12.(19).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -3461,7 +2109,7 @@ ON
 # case_insensitive
 # source_file
 c:|users|huawei|desktop|简易计算器键盘和时钟模块2025年|键盘和显示模块|keyboard.vhd
-993763968443b8bc8ef334de219e6a1d
+72b19d5ccaf012d1d593fe1fb2f80
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -3479,9 +2127,12 @@ false
 PARAMETER_ENUM
 USR
 layout
-1
+0
 PARAMETER_SIGNED_DEC
 USR
+}
+# hierarchies {
+keyboard:inst1
 }
 # lmf
 |altera91sp2|quartus|lmf|maxplus2.lmf
@@ -3490,18 +2141,1544 @@ a36c8ec425c8a2589af98b2d4daabc3
 
 # end
 # entity
-8BitRegister
+lpm_mult
+# storage
+db|Sythesis_Caculator25_12_12.(20).cnf
+db|Sythesis_Caculator25_12_12.(20).cnf
+# case_insensitive
+# source_file
+|altera91sp2|quartus|libraries|megafunctions|lpm_mult.tdf
+6ec8d746e6da2f4aae33fe9d4e4dfb1
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTHA
+4
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHB
+4
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHP
+8
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHR
+8
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHS
+1
+PARAMETER_UNKNOWN
+USR
+LPM_REPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+LATENCY
+0
+PARAMETER_UNKNOWN
+DEF
+INPUT_A_IS_CONSTANT
+NO
+PARAMETER_UNKNOWN
+USR
+INPUT_B_IS_CONSTANT
+NO
+PARAMETER_UNKNOWN
+USR
+USE_EAB
+OFF
+PARAMETER_UNKNOWN
+DEF
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone IV E
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+APEX20K_TECHNOLOGY_MAPPER
+LUT
+TECH_MAPPER_APEX20K
+USR
+DEDICATED_MULTIPLIER_CIRCUITRY
+AUTO
+PARAMETER_UNKNOWN
+DEF
+DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO
+0
+PARAMETER_UNKNOWN
+DEF
+DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO
+0
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+mult_j8t
+PARAMETER_UNKNOWN
+USR
+INPUT_A_FIXED_VALUE
+Bx
+PARAMETER_UNKNOWN
+DEF
+INPUT_B_FIXED_VALUE
+Bx
+PARAMETER_UNKNOWN
+DEF
+USE_AHDL_IMPLEMENTATION
+OFF
+PARAMETER_UNKNOWN
+DEF
+}
+# used_port {
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+mult_j8t
+# storage
+db|Sythesis_Caculator25_12_12.(21).cnf
+db|Sythesis_Caculator25_12_12.(21).cnf
+# case_insensitive
+# source_file
+db|mult_j8t.tdf
+13752785f6446bb2687726c3684ff87d
+7
+# used_port {
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+lpm_divide
+# storage
+db|Sythesis_Caculator25_12_12.(22).cnf
+db|Sythesis_Caculator25_12_12.(22).cnf
+# case_insensitive
+# source_file
+|altera91sp2|quartus|libraries|megafunctions|lpm_divide.tdf
+54966f81ff8a917b1dc9b9ad1a09648
+7
+# user_parameter {
+LPM_WIDTHN
+8
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHD
+4
+PARAMETER_UNKNOWN
+USR
+LPM_NREPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_DREPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_REMAINDERPOSITIVE
+TRUE
+PARAMETER_UNKNOWN
+DEF
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+lpm_divide_jhm
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+OPTIMIZE_FOR_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+quotient7
+-1
+3
+quotient6
+-1
+3
+quotient5
+-1
+3
+quotient4
+-1
+3
+quotient3
+-1
+3
+quotient2
+-1
+3
+quotient1
+-1
+3
+quotient0
+-1
+3
+numer7
+-1
+3
+numer6
+-1
+3
+numer5
+-1
+3
+numer4
+-1
+3
+numer3
+-1
+3
+numer2
+-1
+3
+numer1
+-1
+3
+numer0
+-1
+3
+denom2
+-1
+1
+denom0
+-1
+1
+denom3
+-1
+2
+denom1
+-1
+2
+}
+# macro_sequence
+
+# end
+# entity
+lpm_divide_jhm
+# storage
+db|Sythesis_Caculator25_12_12.(23).cnf
+db|Sythesis_Caculator25_12_12.(23).cnf
+# case_insensitive
+# source_file
+db|lpm_divide_jhm.tdf
+26b318a23141afe0bb334c8cd57fea4
+7
+# used_port {
+quotient7
+-1
+3
+quotient6
+-1
+3
+quotient5
+-1
+3
+quotient4
+-1
+3
+quotient3
+-1
+3
+quotient2
+-1
+3
+quotient1
+-1
+3
+quotient0
+-1
+3
+numer7
+-1
+3
+numer6
+-1
+3
+numer5
+-1
+3
+numer4
+-1
+3
+numer3
+-1
+3
+numer2
+-1
+3
+numer1
+-1
+3
+numer0
+-1
+3
+denom3
+-1
+3
+denom2
+-1
+3
+denom1
+-1
+3
+denom0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+sign_div_unsign_bkh
+# storage
+db|Sythesis_Caculator25_12_12.(24).cnf
+db|Sythesis_Caculator25_12_12.(24).cnf
+# case_insensitive
+# source_file
+db|sign_div_unsign_bkh.tdf
+48175b27368c31569ec9f5c25fe012
+7
+# used_port {
+remainder3
+-1
+3
+remainder2
+-1
+3
+remainder1
+-1
+3
+remainder0
+-1
+3
+quotient7
+-1
+3
+quotient6
+-1
+3
+quotient5
+-1
+3
+quotient4
+-1
+3
+quotient3
+-1
+3
+quotient2
+-1
+3
+quotient1
+-1
+3
+quotient0
+-1
+3
+numerator7
+-1
+3
+numerator6
+-1
+3
+numerator5
+-1
+3
+numerator4
+-1
+3
+numerator3
+-1
+3
+numerator2
+-1
+3
+numerator1
+-1
+3
+numerator0
+-1
+3
+denominator3
+-1
+3
+denominator2
+-1
+3
+denominator1
+-1
+3
+denominator0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+alt_u_div_13f
+# storage
+db|Sythesis_Caculator25_12_12.(25).cnf
+db|Sythesis_Caculator25_12_12.(25).cnf
+# case_insensitive
+# source_file
+db|alt_u_div_13f.tdf
+438ad41728aa123d8448d224cf3137e
+7
+# used_port {
+remainder3
+-1
+3
+remainder2
+-1
+3
+remainder1
+-1
+3
+remainder0
+-1
+3
+quotient7
+-1
+3
+quotient6
+-1
+3
+quotient5
+-1
+3
+quotient4
+-1
+3
+quotient3
+-1
+3
+quotient2
+-1
+3
+quotient1
+-1
+3
+quotient0
+-1
+3
+numerator7
+-1
+3
+numerator6
+-1
+3
+numerator5
+-1
+3
+numerator4
+-1
+3
+numerator3
+-1
+3
+numerator2
+-1
+3
+numerator1
+-1
+3
+numerator0
+-1
+3
+denominator3
+-1
+3
+denominator2
+-1
+3
+denominator1
+-1
+3
+denominator0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+add_sub_unc
+# storage
+db|Sythesis_Caculator25_12_12.(26).cnf
+db|Sythesis_Caculator25_12_12.(26).cnf
+# case_insensitive
+# source_file
+db|add_sub_unc.tdf
+3ac36ba2d392fe9d873b53ef0465a2f
+7
+# used_port {
+result0
+-1
+3
+datab0
+-1
+3
+dataa0
+-1
+3
+cout
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+add_sub_vnc
+# storage
+db|Sythesis_Caculator25_12_12.(27).cnf
+db|Sythesis_Caculator25_12_12.(27).cnf
+# case_insensitive
+# source_file
+db|add_sub_vnc.tdf
+9dbe7470baae8b5a55d554ddc3479e7
+7
+# used_port {
+result1
+-1
+3
+result0
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+cout
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+lpm_divide
+# storage
+db|Sythesis_Caculator25_12_12.(28).cnf
+db|Sythesis_Caculator25_12_12.(28).cnf
+# case_insensitive
+# source_file
+|altera91sp2|quartus|libraries|megafunctions|lpm_divide.tdf
+54966f81ff8a917b1dc9b9ad1a09648
+7
+# user_parameter {
+LPM_WIDTHN
+8
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHD
+8
+PARAMETER_UNKNOWN
+USR
+LPM_NREPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_DREPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_REMAINDERPOSITIVE
+TRUE
+PARAMETER_UNKNOWN
+DEF
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+lpm_divide_q9m
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+OPTIMIZE_FOR_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+remain3
+-1
+3
+remain2
+-1
+3
+remain1
+-1
+3
+remain0
+-1
+3
+numer7
+-1
+3
+numer6
+-1
+3
+numer5
+-1
+3
+numer4
+-1
+3
+numer3
+-1
+3
+numer2
+-1
+3
+numer1
+-1
+3
+numer0
+-1
+3
+denom7
+-1
+1
+denom6
+-1
+1
+denom5
+-1
+1
+denom4
+-1
+1
+denom2
+-1
+1
+denom0
+-1
+1
+denom3
+-1
+2
+denom1
+-1
+2
+}
+# macro_sequence
+
+# end
+# entity
+lpm_divide_q9m
+# storage
+db|Sythesis_Caculator25_12_12.(29).cnf
+db|Sythesis_Caculator25_12_12.(29).cnf
+# case_insensitive
+# source_file
+db|lpm_divide_q9m.tdf
+232a2954e179d9f8fef99d3bc53d8b84
+7
+# used_port {
+remain7
+-1
+3
+remain6
+-1
+3
+remain5
+-1
+3
+remain4
+-1
+3
+remain3
+-1
+3
+remain2
+-1
+3
+remain1
+-1
+3
+remain0
+-1
+3
+numer7
+-1
+3
+numer6
+-1
+3
+numer5
+-1
+3
+numer4
+-1
+3
+numer3
+-1
+3
+numer2
+-1
+3
+numer1
+-1
+3
+numer0
+-1
+3
+denom7
+-1
+3
+denom6
+-1
+3
+denom5
+-1
+3
+denom4
+-1
+3
+denom3
+-1
+3
+denom2
+-1
+3
+denom1
+-1
+3
+denom0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+sign_div_unsign_fkh
+# storage
+db|Sythesis_Caculator25_12_12.(30).cnf
+db|Sythesis_Caculator25_12_12.(30).cnf
+# case_insensitive
+# source_file
+db|sign_div_unsign_fkh.tdf
+e11455a096344a1819abd8b3a37e6c0
+7
+# used_port {
+remainder7
+-1
+3
+remainder6
+-1
+3
+remainder5
+-1
+3
+remainder4
+-1
+3
+remainder3
+-1
+3
+remainder2
+-1
+3
+remainder1
+-1
+3
+remainder0
+-1
+3
+quotient7
+-1
+3
+quotient6
+-1
+3
+quotient5
+-1
+3
+quotient4
+-1
+3
+quotient3
+-1
+3
+quotient2
+-1
+3
+quotient1
+-1
+3
+quotient0
+-1
+3
+numerator7
+-1
+3
+numerator6
+-1
+3
+numerator5
+-1
+3
+numerator4
+-1
+3
+numerator3
+-1
+3
+numerator2
+-1
+3
+numerator1
+-1
+3
+numerator0
+-1
+3
+denominator7
+-1
+3
+denominator6
+-1
+3
+denominator5
+-1
+3
+denominator4
+-1
+3
+denominator3
+-1
+3
+denominator2
+-1
+3
+denominator1
+-1
+3
+denominator0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+alt_u_div_93f
+# storage
+db|Sythesis_Caculator25_12_12.(31).cnf
+db|Sythesis_Caculator25_12_12.(31).cnf
+# case_insensitive
+# source_file
+db|alt_u_div_93f.tdf
+e9ba7674b5247226c812a7b0f011116a
+7
+# used_port {
+remainder7
+-1
+3
+remainder6
+-1
+3
+remainder5
+-1
+3
+remainder4
+-1
+3
+remainder3
+-1
+3
+remainder2
+-1
+3
+remainder1
+-1
+3
+remainder0
+-1
+3
+quotient7
+-1
+3
+quotient6
+-1
+3
+quotient5
+-1
+3
+quotient4
+-1
+3
+quotient3
+-1
+3
+quotient2
+-1
+3
+quotient1
+-1
+3
+quotient0
+-1
+3
+numerator7
+-1
+3
+numerator6
+-1
+3
+numerator5
+-1
+3
+numerator4
+-1
+3
+numerator3
+-1
+3
+numerator2
+-1
+3
+numerator1
+-1
+3
+numerator0
+-1
+3
+denominator7
+-1
+3
+denominator6
+-1
+3
+denominator5
+-1
+3
+denominator4
+-1
+3
+denominator3
+-1
+3
+denominator2
+-1
+3
+denominator1
+-1
+3
+denominator0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+lpm_divide
+# storage
+db|Sythesis_Caculator25_12_12.(32).cnf
+db|Sythesis_Caculator25_12_12.(32).cnf
+# case_insensitive
+# source_file
+|altera91sp2|quartus|libraries|megafunctions|lpm_divide.tdf
+54966f81ff8a917b1dc9b9ad1a09648
+7
+# user_parameter {
+LPM_WIDTHN
+8
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHD
+7
+PARAMETER_UNKNOWN
+USR
+LPM_NREPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_DREPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_REMAINDERPOSITIVE
+TRUE
+PARAMETER_UNKNOWN
+DEF
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+lpm_divide_mhm
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+OPTIMIZE_FOR_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+quotient3
+-1
+3
+quotient2
+-1
+3
+quotient1
+-1
+3
+quotient0
+-1
+3
+numer7
+-1
+3
+numer6
+-1
+3
+numer5
+-1
+3
+numer4
+-1
+3
+numer3
+-1
+3
+numer2
+-1
+3
+numer1
+-1
+3
+numer0
+-1
+3
+denom4
+-1
+1
+denom3
+-1
+1
+denom1
+-1
+1
+denom0
+-1
+1
+denom6
+-1
+2
+denom5
+-1
+2
+denom2
+-1
+2
+}
+# macro_sequence
+
+# end
+# entity
+lpm_divide_mhm
 # storage
 db|Sythesis_Caculator25_12_12.(33).cnf
 db|Sythesis_Caculator25_12_12.(33).cnf
 # case_insensitive
 # source_file
-8bitregister.bdf
-3d12b6737fd32126fcf764c2a35d53
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
+db|lpm_divide_mhm.tdf
+bea3ac945f1ca8138f4fd8d57fa9644
+7
+# used_port {
+quotient7
+-1
+3
+quotient6
+-1
+3
+quotient5
+-1
+3
+quotient4
+-1
+3
+quotient3
+-1
+3
+quotient2
+-1
+3
+quotient1
+-1
+3
+quotient0
+-1
+3
+numer7
+-1
+3
+numer6
+-1
+3
+numer5
+-1
+3
+numer4
+-1
+3
+numer3
+-1
+3
+numer2
+-1
+3
+numer1
+-1
+3
+numer0
+-1
+3
+denom6
+-1
+3
+denom5
+-1
+3
+denom4
+-1
+3
+denom3
+-1
+3
+denom2
+-1
+3
+denom1
+-1
+3
+denom0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+sign_div_unsign_ekh
+# storage
+db|Sythesis_Caculator25_12_12.(34).cnf
+db|Sythesis_Caculator25_12_12.(34).cnf
+# case_insensitive
+# source_file
+db|sign_div_unsign_ekh.tdf
+47da7f4e9caa43783e35a5a0a4655
+7
+# used_port {
+remainder6
+-1
+3
+remainder5
+-1
+3
+remainder4
+-1
+3
+remainder3
+-1
+3
+remainder2
+-1
+3
+remainder1
+-1
+3
+remainder0
+-1
+3
+quotient7
+-1
+3
+quotient6
+-1
+3
+quotient5
+-1
+3
+quotient4
+-1
+3
+quotient3
+-1
+3
+quotient2
+-1
+3
+quotient1
+-1
+3
+quotient0
+-1
+3
+numerator7
+-1
+3
+numerator6
+-1
+3
+numerator5
+-1
+3
+numerator4
+-1
+3
+numerator3
+-1
+3
+numerator2
+-1
+3
+numerator1
+-1
+3
+numerator0
+-1
+3
+denominator6
+-1
+3
+denominator5
+-1
+3
+denominator4
+-1
+3
+denominator3
+-1
+3
+denominator2
+-1
+3
+denominator1
+-1
+3
+denominator0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+alt_u_div_73f
+# storage
+db|Sythesis_Caculator25_12_12.(35).cnf
+db|Sythesis_Caculator25_12_12.(35).cnf
+# case_insensitive
+# source_file
+db|alt_u_div_73f.tdf
+81747332e9a9d4ce7697af9139e59
+7
+# used_port {
+remainder6
+-1
+3
+remainder5
+-1
+3
+remainder4
+-1
+3
+remainder3
+-1
+3
+remainder2
+-1
+3
+remainder1
+-1
+3
+remainder0
+-1
+3
+quotient7
+-1
+3
+quotient6
+-1
+3
+quotient5
+-1
+3
+quotient4
+-1
+3
+quotient3
+-1
+3
+quotient2
+-1
+3
+quotient1
+-1
+3
+quotient0
+-1
+3
+numerator7
+-1
+3
+numerator6
+-1
+3
+numerator5
+-1
+3
+numerator4
+-1
+3
+numerator3
+-1
+3
+numerator2
+-1
+3
+numerator1
+-1
+3
+numerator0
+-1
+3
+denominator6
+-1
+3
+denominator5
+-1
+3
+denominator4
+-1
+3
+denominator3
+-1
+3
+denominator2
+-1
+3
+denominator1
+-1
+3
+denominator0
+-1
+3
 }
 # macro_sequence
 
