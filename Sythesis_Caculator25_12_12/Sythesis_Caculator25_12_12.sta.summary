@@ -2,100 +2,40 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'inst2|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -8.232
-TNS   : -168.812
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -3.237
+TNS   : -52.971
 
-Type  : Slow 1200mV 85C Model Setup 'keyboard:inst1|reg_clk_scan'
-Slack : -0.904
-TNS   : -2.871
-
-Type  : Slow 1200mV 85C Model Hold 'keyboard:inst1|reg_clk_scan'
-Slack : -0.480
-TNS   : -1.720
-
-Type  : Slow 1200mV 85C Model Hold 'inst2|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -0.299
-TNS   : -0.546
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'keyboard:inst1|reg_clk_scan'
-Slack : -1.487
-TNS   : -5.948
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'keyboard:inst1|reg_clk_debounce'
-Slack : -1.487
-TNS   : -1.487
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : 0.432
+TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
-Slack : 9.916
+Slack : -3.000
+TNS   : -46.123
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -2.916
+TNS   : -47.734
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : 0.380
 TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inst2|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 49999.718
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup 'inst2|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -7.463
-TNS   : -151.699
-
-Type  : Slow 1200mV 0C Model Setup 'keyboard:inst1|reg_clk_scan'
-Slack : -0.789
-TNS   : -2.314
-
-Type  : Slow 1200mV 0C Model Hold 'inst2|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -0.439
-TNS   : -0.829
-
-Type  : Slow 1200mV 0C Model Hold 'keyboard:inst1|reg_clk_scan'
-Slack : -0.346
-TNS   : -1.189
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'keyboard:inst1|reg_clk_scan'
-Slack : -1.487
-TNS   : -5.948
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'keyboard:inst1|reg_clk_debounce'
-Slack : -1.487
-TNS   : -1.487
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
-Slack : 9.900
+Slack : -3.000
+TNS   : -46.123
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -0.781
+TNS   : -8.949
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : 0.166
 TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inst2|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 49999.715
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'inst2|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -3.163
-TNS   : -63.677
-
-Type  : Fast 1200mV 0C Model Setup 'keyboard:inst1|reg_clk_scan'
-Slack : 0.157
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'keyboard:inst1|reg_clk_scan'
-Slack : -0.379
-TNS   : -1.421
-
-Type  : Fast 1200mV 0C Model Hold 'inst2|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -0.083
-TNS   : -0.137
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'keyboard:inst1|reg_clk_scan'
-Slack : -1.000
-TNS   : -4.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'keyboard:inst1|reg_clk_debounce'
-Slack : -1.000
-TNS   : -1.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
-Slack : 9.598
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inst2|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 49999.796
-TNS   : 0.000
+Slack : -3.000
+TNS   : -33.752
 
 ------------------------------------------------------------
